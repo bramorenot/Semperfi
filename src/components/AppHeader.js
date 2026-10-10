@@ -42,21 +42,40 @@ class AppHeader extends HTMLElement {
           background: #2ebaf8;
           box-shadow: 0 0 8px rgba(46, 186, 248, 0.6);
         }
+        
+        /* Mobile responsive header */
+        @media (max-width: 768px) {
+          #main-nav {
+            padding: 0.75rem 1rem !important;
+            top: 0.5rem !important;
+            left: 0.5rem !important;
+            right: 0.5rem !important;
+          }
+          
+          #main-nav .logo-text {
+            font-size: 1.125rem !important;
+          }
+          
+          #main-nav .w-10 {
+            width: 2rem !important;
+            height: 2rem !important;
+          }
+        }
       </style>
-      <header class="fixed top-4 left-4 right-4 w-auto z-[100] flex items-center justify-between px-10 py-6 backdrop-blur-md bg-white/10 rounded-full border border-white/20 shadow-xl" 
+      <header class="fixed top-4 left-4 right-4 w-auto z-[100] flex items-center justify-between px-6 sm:px-10 py-4 sm:py-6 backdrop-blur-md bg-white/10 rounded-full border border-white/20 shadow-xl" 
               id="main-nav">
-        <div class="flex items-center gap-12">
-          <a class="flex items-center gap-3 group" href="/">
-            <div class="w-10 h-10 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+        <div class="flex items-center gap-6 sm:gap-12">
+          <a class="flex items-center gap-2 sm:gap-3 group" href="/">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
               <img src="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" 
                    alt="Semper Fi Logo" 
                    class="w-full h-full object-cover" />
             </div>
-            <span class="text-xl font-bold tracking-tight text-white transition-colors duration-300 logo-text drop-shadow-lg">
+            <span class="text-lg sm:text-xl font-bold tracking-tight text-white transition-colors duration-300 logo-text drop-shadow-lg">
               Semper Fi
             </span>
           </a>
-          <nav class="hidden lg:flex items-center gap-8">
+          <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
             <a class="text-sm font-medium text-white/80 hover:text-white nav-link-item transition-colors ${isSobreNosotros ? 'active' : ''}" 
                href="/sobre-nosotros.html">
               Sobre nosotros
