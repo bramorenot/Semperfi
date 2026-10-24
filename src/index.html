@@ -180,10 +180,10 @@
         <!-- Header -->
         <app-header></app-header>
         <!-- Hero Section - Imagen Hero.png -->
-        <section class="relative w-full bg-[#0a1628] p-2 sm:p-4 flex flex-col items-center" data-kid="2-1-2" data-name="hero section" id="hero-section" style="height: auto !important; min-height: 400px; aspect-ratio: 16/9;">
-            <div class="relative w-full h-full rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl" data-kid="2-1-2-1" data-name="hero panel container" id="hero-panel">
+        <section class="relative w-full bg-[#0a1628] p-2 sm:p-4 flex flex-col items-center" data-kid="2-1-2" data-name="hero section" id="hero-section" style="height: auto !important; min-height: 500px;">
+            <div class="relative w-full h-full rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl" data-kid="2-1-2-1" data-name="hero panel container" id="hero-panel" style="aspect-ratio: 1/1; max-height: 90vh;">
                 <!-- Imagen Hero.png como fondo principal -->
-                <img alt="Semper Fi Hero" class="absolute inset-0 w-full h-full object-cover" data-kid="2-1-2-1-1" data-name="hero main image" decoding="async" id="hero-img" loading="eager" src="/Hero.png" style="object-position: center 35%;"/>
+                <img alt="Semper Fi Hero" class="absolute inset-0 w-full h-full object-contain sm:object-cover" data-kid="2-1-2-1-1" data-name="hero main image" decoding="async" id="hero-img" loading="eager" src="/Hero.png" style="object-position: center;"/>
             </div>
         </section>
         <!-- Product Intro Section -->
@@ -783,35 +783,35 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32" data-kid="2-1-10-1-2" data-name="mockups grid">
                     <!-- Login Screen -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-1" data-name="mockup 1">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-1-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-2-1-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-1-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-1-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-1-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-1-1-2" data-name="screen">
                                 <img alt="Login Screen" class="w-full h-full object-cover" src="/login.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-2-1-2" data-name="mockup label">Inicio de Sesión</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-1-2" data-name="mockup label">Inicio de Sesión</p>
                     </div>
 
                     <!-- Home Screen -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-2" data-name="mockup 2">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-2-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-2-2-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-2-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-2-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-2-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-2-1-2" data-name="screen">
                                 <img alt="Home Screen" class="w-full h-full object-cover" src="/Inicio.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-2-2-2" data-name="mockup label">Pantalla Principal</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-2-2" data-name="mockup label">Pantalla Principal</p>
                     </div>
 
                     <!-- Profile Screen -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-3" data-name="mockup 3">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-3-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-2-3-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-3-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-3-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-3-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-3-1-2" data-name="screen">
                                 <img alt="Profile Screen" class="w-full h-full object-cover" src="/Perfiles.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-2-3-2" data-name="mockup label">Perfiles de Usuario</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-3-2" data-name="mockup label">Perfiles de Usuario</p>
                     </div>
                 </div>
 
@@ -819,35 +819,35 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12" data-kid="2-1-10-1-3" data-name="additional mockups">
                     <!-- Reservations Screen -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-1" data-name="mockup 4">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-1-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-3-1-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-1-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-1-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-1-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-1-1-2" data-name="screen">
                                 <img alt="Reservations Screen" class="w-full h-full object-cover" src="/Reservas.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-3-1-2" data-name="mockup label">Sistema de Reservas</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-1-2" data-name="mockup label">Sistema de Reservas</p>
                     </div>
 
                     <!-- Food Menu 1 -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-2" data-name="mockup 5">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-2-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-3-2-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-2-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-2-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-2-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-2-1-2" data-name="screen">
                                 <img alt="Food Menu" class="w-full h-full object-cover" src="/Comida1.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-3-2-2" data-name="mockup label">Menú Digital</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-2-2" data-name="mockup label">Menú Digital</p>
                     </div>
 
                     <!-- Food Menu 2 -->
                     <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-3" data-name="mockup 6">
-                        <div class="relative w-[280px] h-[560px] bg-black rounded-[3rem] p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-3-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10" data-kid="2-1-10-1-3-3-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-3-1-2" data-name="screen">
+                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-3-1" data-name="phone frame">
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-3-1-1" data-name="notch"></div>
+                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-3-1-2" data-name="screen">
                                 <img alt="Food Orders" class="w-full h-full object-cover" src="/Comida2.jpeg" loading="lazy"/>
                             </div>
                         </div>
-                        <p class="mt-8 text-[#1c1d1f] text-lg font-semibold" data-kid="2-1-10-1-3-3-2" data-name="mockup label">Pedidos de Comida</p>
+                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-3-2" data-name="mockup label">Pedidos de Comida</p>
                     </div>
                 </div>
             </div>

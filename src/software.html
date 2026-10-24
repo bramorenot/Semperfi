@@ -245,133 +245,293 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-                    <!-- Servicio 1: Domicilios -->
-                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 reveal-up">
-                        <h3 class="font-serif text-2xl sm:text-3xl text-[#1c1d1f] mb-4">🚚 Domicilios</h3>
-                        <div class="mb-6 sm:mb-8">
-                            <span class="text-4xl sm:text-5xl font-bold text-[#2ebaf8]">GRATIS</span>
+                <!-- Pricing Cards Carousel -->
+                <div class="relative max-w-6xl mx-auto overflow-hidden">
+                    <!-- Carousel Container -->
+                    <div class="pricing-carousel flex transition-transform duration-500 ease-in-out" id="pricing-carousel">
+                        <!-- Servicio 1: Domicilios -->
+                        <div class="carousel-slide min-w-full md:min-w-[33.333%] px-3">
+                            <div class="bg-white rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 reveal-up flex flex-col h-full">
+                                <h3 class="font-serif text-lg sm:text-xl lg:text-2xl text-[#1c1d1f] mb-1.5 sm:mb-2">🚚 Domicilios</h3>
+                                <div class="mb-3 sm:mb-4 lg:mb-5">
+                                    <span class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2ebaf8]">GRATIS</span>
+                                </div>
+                                <ul class="space-y-1.5 sm:space-y-2 lg:space-y-2.5 mb-4 sm:mb-5 lg:mb-6 flex-grow text-xs sm:text-sm lg:text-base">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Gestión de pedidos en tiempo real</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Seguimiento de entregas</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Conexión directa con clientes</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Pagos integrados</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">App móvil incluida</span>
+                                    </li>
+                                </ul>
+                                <a class="btn-pill-dark w-full text-center py-2.5 sm:py-3 block rounded-full font-medium text-sm hover:opacity-90 transition-opacity" href="/domicilios.html">Comenzar ahora</a>
+                            </div>
                         </div>
-                        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Gestión de pedidos en tiempo real</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Seguimiento de entregas</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Conexión directa con clientes</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Pagos integrados</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">App móvil incluida</span>
-                            </li>
-                        </ul>
-                        <a class="btn-pill-dark w-full text-center py-3 block min-h-[44px] flex items-center justify-center text-sm sm:text-base" href="/domicilios.html">Comenzar ahora</a>
+
+                        <!-- Servicio 2: Stock (Inventario) - Destacado -->
+                        <div class="carousel-slide min-w-full md:min-w-[33.333%] px-3">
+                            <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 reveal-up relative flex flex-col h-full">
+                                <div class="absolute -top-2.5 sm:-top-3 left-1/2 transform -translate-x-1/2 bg-white text-[#1c1d1f] px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold whitespace-nowrap">
+                                    Más popular
+                                </div>
+                                <h3 class="font-serif text-lg sm:text-xl lg:text-2xl text-white mb-1.5 sm:mb-2 mt-1">📊 Stock (Inventario)</h3>
+                                <div class="mb-3 sm:mb-4 lg:mb-5">
+                                    <span class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">GRATIS</span>
+                                </div>
+                                <ul class="space-y-1.5 sm:space-y-2 lg:space-y-2.5 mb-4 sm:mb-5 lg:mb-6 flex-grow text-xs sm:text-sm lg:text-base">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-white">Control total de inventario</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-white">Registro automático de ventas</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-white">Análisis de costos y márgenes</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-white">Reportes de rentabilidad</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-white">Dashboard en tiempo real</span>
+                                    </li>
+                                </ul>
+                                <a class="btn-pill-light w-full text-center py-2.5 sm:py-3 block rounded-full font-medium text-sm hover:opacity-90 transition-opacity" href="/software.html">Comenzar ahora</a>
+                            </div>
+                        </div>
+
+                        <!-- Servicio 3: Inteligencia Artificial -->
+                        <div class="carousel-slide min-w-full md:min-w-[33.333%] px-3">
+                            <div class="bg-white rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 reveal-up flex flex-col h-full">
+                                <h3 class="font-serif text-lg sm:text-xl lg:text-2xl text-[#1c1d1f] mb-1.5 sm:mb-2">🤖 Inteligencia Artificial</h3>
+                                <div class="mb-3 sm:mb-4 lg:mb-5">
+                                    <span class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2ebaf8]">GRATIS</span>
+                                </div>
+                                <ul class="space-y-1.5 sm:space-y-2 lg:space-y-2.5 mb-4 sm:mb-5 lg:mb-6 flex-grow text-xs sm:text-sm lg:text-base">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Predicciones de demanda</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Análisis de tendencias</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Optimización de precios</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Recomendaciones personalizadas</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span class="text-[#70706f]">Alertas inteligentes</span>
+                                    </li>
+                                </ul>
+                                <a class="btn-pill-dark w-full text-center py-2.5 sm:py-3 block rounded-full font-medium text-sm hover:opacity-90 transition-opacity" href="/software.html">Comenzar ahora</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Servicio 2: Stock (Inventario) - Destacado -->
-                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 reveal-up relative">
-                        <div class="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 bg-white text-[#1c1d1f] px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-                            Más popular
-                        </div>
-                        <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4">📊 Stock (Inventario)</h3>
-                        <div class="mb-6 sm:mb-8">
-                            <span class="text-4xl sm:text-5xl font-bold text-white">GRATIS</span>
-                        </div>
-                        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-white text-sm sm:text-base">Control total de inventario</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-white text-sm sm:text-base">Registro automático de ventas</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-white text-sm sm:text-base">Análisis de costos y márgenes</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-white text-sm sm:text-base">Reportes de rentabilidad</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-white text-sm sm:text-base">Dashboard en tiempo real</span>
-                            </li>
-                        </ul>
-                        <a class="btn-pill-light w-full text-center py-3 block min-h-[44px] flex items-center justify-center text-sm sm:text-base" href="/software.html">Comenzar ahora</a>
+                    <!-- Carousel Indicators -->
+                    <div class="flex justify-center gap-2 mt-6 md:hidden" id="carousel-indicators">
+                        <button class="carousel-indicator w-2 h-2 rounded-full bg-white/40 transition-all duration-300" data-index="0"></button>
+                        <button class="carousel-indicator w-2 h-2 rounded-full bg-white/40 transition-all duration-300" data-index="1"></button>
+                        <button class="carousel-indicator w-2 h-2 rounded-full bg-white/40 transition-all duration-300" data-index="2"></button>
                     </div>
 
-                    <!-- Servicio 3: Inteligencia Artificial -->
-                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 reveal-up">
-                        <h3 class="font-serif text-2xl sm:text-3xl text-[#1c1d1f] mb-4">🤖 Inteligencia Artificial</h3>
-                        <div class="mb-6 sm:mb-8">
-                            <span class="text-4xl sm:text-5xl font-bold text-[#2ebaf8]">GRATIS</span>
-                        </div>
-                        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Predicciones de demanda</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Análisis de tendencias</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Optimización de precios</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Recomendaciones personalizadas</span>
-                            </li>
-                            <li class="flex items-start gap-2 sm:gap-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-[#70706f] text-sm sm:text-base">Alertas inteligentes</span>
-                            </li>
-                        </ul>
-                        <a class="btn-pill-dark w-full text-center py-3 block min-h-[44px] flex items-center justify-center text-sm sm:text-base" href="/software.html">Comenzar ahora</a>
-                    </div>
+                    <!-- Carousel Navigation Arrows (Desktop) -->
+                    <button class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-3 rounded-full transition-all duration-300" id="carousel-prev" aria-label="Previous slide">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm p-3 rounded-full transition-all duration-300" id="carousel-next" aria-label="Next slide">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
                 </div>
+
+                <!-- Carousel Script -->
+                <script>
+                (function() {
+                    const carousel = document.getElementById('pricing-carousel');
+                    const indicators = document.querySelectorAll('.carousel-indicator');
+                    const prevBtn = document.getElementById('carousel-prev');
+                    const nextBtn = document.getElementById('carousel-next');
+                    let currentIndex = 0;
+                    const totalSlides = 3;
+                    let autoplayInterval;
+                    let isDesktop = window.innerWidth >= 768;
+
+                    function updateCarousel() {
+                        if (isDesktop) {
+                            // En desktop, mostrar todas las tarjetas
+                            carousel.style.transform = 'translateX(0)';
+                        } else {
+                            // En móvil, carousel normal
+                            const offset = -currentIndex * 100;
+                            carousel.style.transform = `translateX(${offset}%)`;
+                        }
+                        
+                        // Update indicators
+                        indicators.forEach((indicator, index) => {
+                            if (index === currentIndex) {
+                                indicator.classList.add('bg-white', 'w-8');
+                                indicator.classList.remove('bg-white/40', 'w-2');
+                            } else {
+                                indicator.classList.remove('bg-white', 'w-8');
+                                indicator.classList.add('bg-white/40', 'w-2');
+                            }
+                        });
+                    }
+
+                    function nextSlide() {
+                        if (!isDesktop) {
+                            currentIndex = (currentIndex + 1) % totalSlides;
+                            updateCarousel();
+                        }
+                    }
+
+                    function prevSlide() {
+                        if (!isDesktop) {
+                            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                            updateCarousel();
+                        }
+                    }
+
+                    function goToSlide(index) {
+                        if (!isDesktop) {
+                            currentIndex = index;
+                            updateCarousel();
+                            resetAutoplay();
+                        }
+                    }
+
+                    function startAutoplay() {
+                        if (!isDesktop) {
+                            autoplayInterval = setInterval(nextSlide, 4000); // Cambiar cada 4 segundos
+                        }
+                    }
+
+                    function stopAutoplay() {
+                        clearInterval(autoplayInterval);
+                    }
+
+                    function resetAutoplay() {
+                        stopAutoplay();
+                        startAutoplay();
+                    }
+
+                    // Event listeners
+                    if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+                    if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+                    
+                    indicators.forEach((indicator, index) => {
+                        indicator.addEventListener('click', () => goToSlide(index));
+                    });
+
+                    // Touch events para swipe en móvil
+                    let touchStartX = 0;
+                    let touchEndX = 0;
+
+                    carousel.addEventListener('touchstart', (e) => {
+                        touchStartX = e.changedTouches[0].screenX;
+                        stopAutoplay();
+                    });
+
+                    carousel.addEventListener('touchend', (e) => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        handleSwipe();
+                        resetAutoplay();
+                    });
+
+                    function handleSwipe() {
+                        if (!isDesktop) {
+                            const swipeThreshold = 50;
+                            if (touchStartX - touchEndX > swipeThreshold) {
+                                nextSlide();
+                            } else if (touchEndX - touchStartX > swipeThreshold) {
+                                prevSlide();
+                            }
+                        }
+                    }
+
+                    // Pausar autoplay cuando el usuario interactúa
+                    carousel.addEventListener('mouseenter', stopAutoplay);
+                    carousel.addEventListener('mouseleave', startAutoplay);
+
+                    // Responsive handler
+                    window.addEventListener('resize', () => {
+                        const wasDesktop = isDesktop;
+                        isDesktop = window.innerWidth >= 768;
+                        
+                        if (wasDesktop !== isDesktop) {
+                            currentIndex = 0;
+                            updateCarousel();
+                            if (isDesktop) {
+                                stopAutoplay();
+                            } else {
+                                startAutoplay();
+                            }
+                        }
+                    });
+
+                    // Inicializar
+                    updateCarousel();
+                    startAutoplay();
+                })();
+                </script>
 
                 <!-- Banner de servicios gratuitos -->
                 <div class="mt-12 sm:mt-16 md:mt-20 max-w-5xl mx-auto reveal-up">
