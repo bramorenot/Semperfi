@@ -1,72 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre Nosotros — Semper Fi</title>
-  
-  <!-- Favicon - Logo de Semper Fi con fondo degradado -->
-  <link rel="icon" type="image/png" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  <link rel="apple-touch-icon" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css"/>
+  <title>Sobre nosotros — Semper Fi</title>
+  <meta name="description" content="Conoce al equipo de Semper Fi y nuestra misión: transformar el comercio local de Popayán con tecnología accesible e inteligente." />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="canonical" href="https://semperfi.vercel.app/sobre-nosotros.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Semper Fi" />
+  <meta property="og:title" content="Sobre nosotros — Semper Fi" />
+  <meta property="og:description" content="Conoce al equipo de Semper Fi y nuestra misión: transformar el comercio local de Popayán con tecnología accesible e inteligente." />
+  <meta property="og:url" content="https://semperfi.vercel.app/sobre-nosotros.html" />
+  <meta property="og:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sobre nosotros — Semper Fi" />
+  <meta name="twitter:description" content="Conoce al equipo de Semper Fi y nuestra misión: transformar el comercio local de Popayán con tecnología accesible e inteligente." />
+  <meta name="twitter:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/sora-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script>document.documentElement.classList.remove('no-js');</script>
   <script type="module" src="/main.js"></script>
 </head>
-<body>
-<div class="w-full bg-[#f9f8f6] text-[#1c1d1f] font-sans overflow-x-clip" id="smooth-wrapper">
-    <div id="smooth-content">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
-      
-      :root {
-        --color-bg-light: #f9f8f6;
-        --color-bg-light-alt: #f0efed;
-        --color-bg-dark: #080808;
-        --color-text-primary: #1c1d1f;
-        --color-text-secondary: #70706f;
-        --font-serif: "Gestura Headline", Georgia, serif;
-        --font-sans: "Inter", sans-serif;
-        --font-mono: "Roboto Mono", monospace;
-      }
-
-      body {
-        background-color: var(--color-bg-light);
-        color: var(--color-text-primary);
-        font-family: var(--font-sans);
-      }
-
-      .font-serif { font-family: var(--font-serif); }
-      .font-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
-      
-      .btn-pill-light {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: white;
-        color: black;
-        transition: background-color 0.2s;
-      }
-      .btn-pill-dark {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: var(--color-bg-dark);
-        color: white;
-        transition: background-color 0.2s;
-      }
-
-      .reveal-up { transform: translateY(40px); opacity: 0; }
-      #main-nav.is-light .nav-link-item,
-      #main-nav.is-light .logo-text,
-      #main-nav.is-light .logo-svg { color: var(--color-text-primary) !important; }
-        </style>
-        
-        <!-- Header -->
-        <app-header></app-header>
-
-        <!-- Hero Section -->
+<body class="bg-cream text-ink">
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<app-header></app-header>
+<main id="main" class="overflow-x-clip">
+<!-- Hero Section -->
         <section class="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] bg-[#f9f8f6] pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10 flex items-center">
             <div class="max-w-7xl mx-auto w-full">
                 <div class="max-w-4xl">
@@ -76,7 +42,7 @@
                     <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] text-[#1c1d1f] leading-[1.1] mb-6 sm:mb-8 md:mb-10 reveal-up">
                         Construyendo el futuro digital de Popayán
                     </h1>
-                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed reveal-up">
+                    <p class="text-muted text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed reveal-up">
                         Semper Fi nació con la visión de transformar el comercio local en Popayán mediante tecnología accesible e inteligente. Conectamos negocios, clientes y trabajadores en un ecosistema digital completo.
                     </p>
                 </div>
@@ -84,7 +50,7 @@
         </section>
 
         <!-- Mission & Vision -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 lg:gap-24">
                     <!-- Misión -->
@@ -121,8 +87,8 @@
         <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">Nuestros Valores</h2>
-                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">Nuestros Valores</h2>
+                    <p class="text-muted text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Los principios que guían cada decisión que tomamos
                     </p>
                 </div>
@@ -136,7 +102,7 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-2xl sm:text-3xl mb-4 sm:mb-6">Compromiso Local</h3>
-                        <p class="text-[#70706f] text-base sm:text-lg leading-relaxed">
+                        <p class="text-muted text-base sm:text-lg leading-relaxed">
                             Priorizamos el desarrollo de nuestra comunidad, generando empleo y oportunidades para los habitantes de Popayán.
                         </p>
                     </div>
@@ -149,7 +115,7 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-2xl sm:text-3xl mb-4 sm:mb-6">Innovación</h3>
-                        <p class="text-[#70706f] text-base sm:text-lg leading-relaxed">
+                        <p class="text-muted text-base sm:text-lg leading-relaxed">
                             Adoptamos las últimas tecnologías, incluyendo inteligencia artificial, para ofrecer soluciones de vanguardia.
                         </p>
                     </div>
@@ -162,7 +128,7 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-2xl sm:text-3xl mb-4 sm:mb-6">Accesibilidad</h3>
-                        <p class="text-[#70706f] text-base sm:text-lg leading-relaxed">
+                        <p class="text-muted text-base sm:text-lg leading-relaxed">
                             Creemos que la tecnología debe estar al alcance de todos, sin importar el tamaño del negocio o el presupuesto.
                         </p>
                     </div>
@@ -171,10 +137,10 @@
         </section>
 
         <!-- Team Section -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Nuestro Equipo</h2>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Nuestro Equipo</h2>
                     <p class="text-white/60 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Profesionales apasionados por la tecnología y el desarrollo local
                     </p>
@@ -184,7 +150,7 @@
                     <!-- Team Member 1: Melki Santiago -->
                     <div class="text-center reveal-up">
                         <div class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600 mx-auto mb-6 sm:mb-8">
-                            <img src="/integrantes/melki-santiago.png" alt="Melki Santiago Meneses" class="w-full h-full object-cover"/>
+                            <picture class="contents"><source type="image/avif" srcset="/img/team-melki-santiago-320.avif 320w" sizes="(min-width:1024px) 220px, 45vw"/><source type="image/webp" srcset="/img/team-melki-santiago-320.webp 320w" sizes="(min-width:1024px) 220px, 45vw"/><img src="/img/team-melki-santiago-320.webp" width="320" height="320" alt="Melki Santiago Meneses" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low"/></picture>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-white mb-1.5 sm:mb-2">Melki Santiago Meneses</h3>
                         <p class="text-white/40 text-xs sm:text-sm font-mono mb-3 sm:mb-4">CEO</p>
@@ -194,7 +160,7 @@
                     <!-- Team Member 2: Brayan Alexander -->
                     <div class="text-center reveal-up">
                         <div class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-gradient-to-br from-green-500 to-teal-600 mx-auto mb-6 sm:mb-8">
-                            <img src="/integrantes/alexander-trullo.png" alt="Brayan Alexander Moreno" class="w-full h-full object-cover"/>
+                            <picture class="contents"><source type="image/avif" srcset="/img/team-alexander-trullo-320.avif 320w" sizes="(min-width:1024px) 220px, 45vw"/><source type="image/webp" srcset="/img/team-alexander-trullo-320.webp 320w" sizes="(min-width:1024px) 220px, 45vw"/><img src="/img/team-alexander-trullo-320.webp" width="320" height="334" alt="Brayan Alexander Moreno" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low"/></picture>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-white mb-1.5 sm:mb-2">Brayan Alexander Moreno</h3>
                         <p class="text-white/40 text-xs sm:text-sm font-mono mb-3 sm:mb-4">Equipo directivo</p>
@@ -204,7 +170,7 @@
                     <!-- Team Member 3: Oscar Geovanny -->
                     <div class="text-center reveal-up">
                         <div class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-gradient-to-br from-orange-500 to-red-600 mx-auto mb-6 sm:mb-8">
-                            <img src="/integrantes/oscar-yepez.png" alt="Oscar Geovanny Yepez" class="w-full h-full object-cover"/>
+                            <picture class="contents"><source type="image/avif" srcset="/img/team-oscar-yepez-320.avif 320w" sizes="(min-width:1024px) 220px, 45vw"/><source type="image/webp" srcset="/img/team-oscar-yepez-320.webp 320w" sizes="(min-width:1024px) 220px, 45vw"/><img src="/img/team-oscar-yepez-320.webp" width="320" height="331" alt="Oscar Geovanny Yepez" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low"/></picture>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-white mb-1.5 sm:mb-2">Oscar Geovanny Yepez</h3>
                         <p class="text-white/40 text-xs sm:text-sm font-mono mb-3 sm:mb-4">Equipo directivo</p>
@@ -214,7 +180,7 @@
                     <!-- Team Member 4: David Urrutia -->
                     <div class="text-center reveal-up">
                         <div class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-gradient-to-br from-purple-500 to-pink-600 mx-auto mb-6 sm:mb-8">
-                            <img src="/integrantes/david-urrutia.png" alt="David Urrutia Cerón" class="w-full h-full object-cover"/>
+                            <picture class="contents"><source type="image/avif" srcset="/img/team-david-urrutia-320.avif 320w" sizes="(min-width:1024px) 220px, 45vw"/><source type="image/webp" srcset="/img/team-david-urrutia-320.webp 320w" sizes="(min-width:1024px) 220px, 45vw"/><img src="/img/team-david-urrutia-320.webp" width="320" height="299" alt="David Urrutia Cerón" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low"/></picture>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-white mb-1.5 sm:mb-2">David Urrutia Cerón</h3>
                         <p class="text-white/40 text-xs sm:text-sm font-mono mb-3 sm:mb-4">Equipo directivo</p>
@@ -224,7 +190,7 @@
                     <!-- Team Member 5: Deiby Alejandro -->
                     <div class="text-center reveal-up">
                         <div class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-600 mx-auto mb-6 sm:mb-8">
-                            <img src="/integrantes/deiby-ramirez.png" alt="Deiby Alejandro Ramirez Galvis" class="w-full h-full object-cover"/>
+                            <picture class="contents"><source type="image/avif" srcset="/img/team-deiby-ramirez-320.avif 320w" sizes="(min-width:1024px) 220px, 45vw"/><source type="image/webp" srcset="/img/team-deiby-ramirez-320.webp 320w" sizes="(min-width:1024px) 220px, 45vw"/><img src="/img/team-deiby-ramirez-320.webp" width="320" height="292" alt="Deiby Alejandro Ramirez Galvis" class="w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="low"/></picture>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-white mb-1.5 sm:mb-2">Deiby Alejandro Ramirez Galvis</h3>
                         <p class="text-white/40 text-xs sm:text-sm font-mono mb-3 sm:mb-4">Equipo directivo</p>
@@ -235,44 +201,9 @@
         </section>
 
         <!-- Footer -->
-        <app-footer></app-footer>
-    </div>
-</div>
+        
+</main>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script type="module">
-    import Lenis from "https://esm.sh/lenis@1"
-  
-  gsap.registerPlugin(ScrollTrigger);
-
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
-
-  lenis.on('scroll', ScrollTrigger.update)
-
-  gsap.utils.toArray('.reveal-up').forEach(el => {
-    gsap.to(el, {
-      y: 0,
-      opacity: 1,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%"
-      }
-    });
-  });
-</script>
-
+<app-footer></app-footer>
 </body>
 </html>

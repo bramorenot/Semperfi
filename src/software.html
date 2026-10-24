@@ -1,84 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Software — Semper Fi</title>
-  
-  <!-- Favicon - Logo de Semper Fi con fondo degradado -->
-  <link rel="icon" type="image/png" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  <link rel="apple-touch-icon" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css"/>
+  <meta name="description" content="Semper Fi Software: inventarios, costos reales, ventas y rentabilidad en tiempo real con inteligencia artificial para tu negocio." />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="canonical" href="https://semperfi.vercel.app/software.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Semper Fi" />
+  <meta property="og:title" content="Software — Semper Fi" />
+  <meta property="og:description" content="Semper Fi Software: inventarios, costos reales, ventas y rentabilidad en tiempo real con inteligencia artificial para tu negocio." />
+  <meta property="og:url" content="https://semperfi.vercel.app/software.html" />
+  <meta property="og:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Software — Semper Fi" />
+  <meta name="twitter:description" content="Semper Fi Software: inventarios, costos reales, ventas y rentabilidad en tiempo real con inteligencia artificial para tu negocio." />
+  <meta name="twitter:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/sora-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script>document.documentElement.classList.remove('no-js');</script>
   <script type="module" src="/main.js"></script>
 </head>
-<body>
-<div class="w-full bg-[#f9f8f6] text-[#1c1d1f] font-sans overflow-x-clip" id="smooth-wrapper">
-    <div id="smooth-content">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
-      
-      :root {
-        --color-bg-light: #f9f8f6;
-        --color-bg-dark: #080808;
-        --color-text-primary: #1c1d1f;
-        --font-serif: "Gestura Headline", Georgia, serif;
-        --font-sans: "Inter", sans-serif;
-        --font-mono: "Roboto Mono", monospace;
-      }
-
-      body {
-        background-color: var(--color-bg-light);
-        color: var(--color-text-primary);
-        font-family: var(--font-sans);
-      }
-
-      .font-serif { font-family: var(--font-serif); }
-      .font-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
-      
-      .btn-pill-dark {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: var(--color-bg-dark);
-        color: white;
-        transition: background-color 0.2s;
-      }
-      .btn-pill-light {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: white;
-        color: black;
-        transition: background-color 0.2s;
-      }
-
-      .reveal-up { transform: translateY(40px); opacity: 0; }
-      #main-nav.is-light .nav-link-item,
-      #main-nav.is-light .logo-text,
-      #main-nav.is-light .logo-svg { color: var(--color-text-primary) !important; }
-        </style>
-        
-        <!-- Header -->
-        <app-header></app-header>
-
-        <!-- Hero Section -->
+<body class="bg-cream text-ink">
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<app-header></app-header>
+<main id="main" class="overflow-x-clip">
+<!-- Hero Section -->
         <section class="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen bg-gradient-to-br from-[#f9f8f6] to-[#e8e7e5] pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10 flex items-center">
             <div class="max-w-7xl mx-auto w-full">
                 <div class="max-w-4xl">
                     <div class="flex items-center gap-2 mb-6 sm:mb-8 md:mb-10 reveal-up">
-                        <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-500"></div>
+                        <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-semperfi"></div>
                         <span class="font-mono text-gray-500 text-xs sm:text-sm">Semper Fi Software</span>
                     </div>
-                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] text-[#1c1d1f] leading-[1.05] mb-6 sm:mb-8 md:mb-10 reveal-up">
+                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[clamp(4rem,6.5vw,6rem)] text-[#1c1d1f] leading-[1.05] mb-6 sm:mb-8 md:mb-10 reveal-up">
                         Inteligencia artificial para tu negocio
                     </h1>
-                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed mb-8 sm:mb-10 md:mb-12 reveal-up">
+                    <p class="text-muted text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed mb-8 sm:mb-10 md:mb-12 reveal-up">
                         Sistema completo de gestión empresarial con IA integrada. Controla inventarios, costos, ventas y rentabilidad en tiempo real.
                     </p>
-                    <a class="btn-pill-dark px-8 sm:px-10 py-3 sm:py-4 text-sm sm:text-base inline-block min-h-[44px] flex items-center justify-center reveal-up" href="#">
+                    <a class="btn-pill-dark px-8 sm:px-10 py-3 sm:py-4 text-sm sm:text-base inline-block min-h-[44px] flex items-center justify-center reveal-up" href="mailto:info@semperfi.app?subject=Solicitud%20de%20demo%20Semper%20Fi%20Software">
                         Solicitar demo
                     </a>
                 </div>
@@ -86,10 +54,10 @@
         </section>
 
         <!-- Features Grid -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Características principales</h2>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Características principales</h2>
                     <p class="text-white/60 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Todo lo que necesitas para gestionar tu negocio de forma inteligente
                     </p>
@@ -181,8 +149,8 @@
         <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">Interfaz intuitiva y poderosa</h2>
-                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">Interfaz intuitiva y poderosa</h2>
+                    <p class="text-muted text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Diseñado para ser simple de usar pero con funcionalidades profesionales
                     </p>
                 </div>
@@ -191,12 +159,12 @@
                     <!-- Screenshot 1 -->
                     <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-black/5 reveal-up">
                         <div class="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl sm:rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
-                            <svg class="w-16 h-16 sm:w-20 sm:h-20 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-16 h-16 sm:w-20 sm:h-20 text-semperfi-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                             </svg>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-[#1c1d1f] mb-2 sm:mb-3">Dashboard Principal</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base">Vista general de tu negocio con métricas clave y alertas importantes</p>
+                        <p class="text-muted text-sm sm:text-base">Vista general de tu negocio con métricas clave y alertas importantes</p>
                     </div>
 
                     <!-- Screenshot 2 -->
@@ -207,7 +175,7 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-[#1c1d1f] mb-2 sm:mb-3">Gestión de Inventario</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base">Control detallado de productos, stock y movimientos de inventario</p>
+                        <p class="text-muted text-sm sm:text-base">Control detallado de productos, stock y movimientos de inventario</p>
                     </div>
 
                     <!-- Screenshot 3 -->
@@ -218,7 +186,7 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-[#1c1d1f] mb-2 sm:mb-3">Análisis Financiero</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base">Reportes detallados de rentabilidad, costos y flujo de caja</p>
+                        <p class="text-muted text-sm sm:text-base">Reportes detallados de rentabilidad, costos y flujo de caja</p>
                     </div>
 
                     <!-- Screenshot 4 -->
@@ -229,17 +197,17 @@
                             </svg>
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl text-[#1c1d1f] mb-2 sm:mb-3">Asistente IA</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base">Recibe recomendaciones inteligentes para optimizar tu negocio</p>
+                        <p class="text-muted text-sm sm:text-base">Recibe recomendaciones inteligentes para optimizar tu negocio</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Pricing -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Servicios totalmente gratuitos</h2>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Servicios totalmente gratuitos</h2>
                     <p class="text-white/60 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Todas las herramientas que necesitas para impulsar tu negocio, sin costo alguno
                     </p>
@@ -261,31 +229,31 @@
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Gestión de pedidos en tiempo real</span>
+                                        <span class="text-muted">Gestión de pedidos en tiempo real</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Seguimiento de entregas</span>
+                                        <span class="text-muted">Seguimiento de entregas</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Conexión directa con clientes</span>
+                                        <span class="text-muted">Conexión directa con clientes</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Pagos integrados</span>
+                                        <span class="text-muted">Pagos integrados</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">App móvil incluida</span>
+                                        <span class="text-muted">App móvil incluida</span>
                                     </li>
                                 </ul>
                                 <a class="btn-pill-dark w-full text-center py-2.5 sm:py-3 block rounded-full font-medium text-sm hover:opacity-90 transition-opacity" href="/domicilios.html">Comenzar ahora</a>
@@ -350,31 +318,31 @@
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Predicciones de demanda</span>
+                                        <span class="text-muted">Predicciones de demanda</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Análisis de tendencias</span>
+                                        <span class="text-muted">Análisis de tendencias</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Optimización de precios</span>
+                                        <span class="text-muted">Optimización de precios</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Recomendaciones personalizadas</span>
+                                        <span class="text-muted">Recomendaciones personalizadas</span>
                                     </li>
                                     <li class="flex items-start gap-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span class="text-[#70706f]">Alertas inteligentes</span>
+                                        <span class="text-muted">Alertas inteligentes</span>
                                     </li>
                                 </ul>
                                 <a class="btn-pill-dark w-full text-center py-2.5 sm:py-3 block rounded-full font-medium text-sm hover:opacity-90 transition-opacity" href="/software.html">Comenzar ahora</a>
@@ -571,44 +539,9 @@
         </section>
 
         <!-- Footer -->
-        <app-footer></app-footer>
-    </div>
-</div>
+        
+</main>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script type="module">
-    import Lenis from "https://esm.sh/lenis@1"
-  
-  gsap.registerPlugin(ScrollTrigger);
-
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
-
-  lenis.on('scroll', ScrollTrigger.update)
-
-  gsap.utils.toArray('.reveal-up').forEach(el => {
-    gsap.to(el, {
-      y: 0,
-      opacity: 1,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%"
-      }
-    });
-  });
-</script>
-
+<app-footer></app-footer>
 </body>
 </html>

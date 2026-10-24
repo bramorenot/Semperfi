@@ -1,92 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Domicilios — Semper Fi</title>
-  
-  <!-- Favicon - Logo de Semper Fi con fondo degradado -->
-  <link rel="icon" type="image/png" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  <link rel="apple-touch-icon" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css"/>
+  <meta name="description" content="Domicilios inteligentes en Popayán: recibe pedidos, asigna repartidores y entrega sin infraestructura propia con Semper Fi." />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="canonical" href="https://semperfi.vercel.app/domicilios.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Semper Fi" />
+  <meta property="og:title" content="Domicilios — Semper Fi" />
+  <meta property="og:description" content="Domicilios inteligentes en Popayán: recibe pedidos, asigna repartidores y entrega sin infraestructura propia con Semper Fi." />
+  <meta property="og:url" content="https://semperfi.vercel.app/domicilios.html" />
+  <meta property="og:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domicilios — Semper Fi" />
+  <meta name="twitter:description" content="Domicilios inteligentes en Popayán: recibe pedidos, asigna repartidores y entrega sin infraestructura propia con Semper Fi." />
+  <meta name="twitter:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/sora-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script>document.documentElement.classList.remove('no-js');</script>
   <script type="module" src="/main.js"></script>
 </head>
-<body>
-<div class="w-full bg-[#080808] text-white font-sans overflow-x-clip" id="smooth-wrapper">
-    <div id="smooth-content">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
-      
-      :root {
-        --color-bg-light: #f9f8f6;
-        --color-bg-dark: #080808;
-        --color-text-primary: #1c1d1f;
-        --font-serif: "Gestura Headline", Georgia, serif;
-        --font-sans: "Inter", sans-serif;
-        --font-mono: "Roboto Mono", monospace;
-      }
-
-      body {
-        background-color: var(--color-bg-dark);
-        color: white;
-        font-family: var(--font-sans);
-      }
-
-      .font-serif { font-family: var(--font-serif); }
-      .font-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
-      
-      .btn-pill-light {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: white;
-        color: black;
-        transition: background-color 0.2s;
-      }
-
-      .reveal-up { transform: translateY(40px); opacity: 0; }
-      
-      /* Fix footer text colors */
-      app-footer footer * {
-        color: inherit !important;
-      }
-      
-      app-footer footer {
-        color: #1c1d1f !important;
-      }
-      
-      app-footer footer .text-gray-400,
-      app-footer footer .text-white\/40 {
-        color: #9ca3af !important;
-      }
-      
-      app-footer footer .text-\[\#70706f\] {
-        color: #70706f !important;
-      }
-      
-      app-footer footer a {
-        color: #1c1d1f !important;
-      }
-      
-      app-footer footer a:hover {
-        color: #6b7280 !important;
-      }
-        </style>
-        
-        <!-- Header -->
-        <app-header></app-header>
-
-        <!-- Hero Section -->
-        <section class="relative w-full min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen bg-[#080808] pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10 flex items-center">
+<body class="bg-night text-white">
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<app-header></app-header>
+<main id="main" class="overflow-x-clip">
+<!-- Hero Section -->
+        <section class="relative w-full min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen bg-night pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10 flex items-center">
             <div class="max-w-7xl mx-auto w-full">
                 <div class="max-w-4xl">
                     <div class="flex items-center gap-2 mb-6 sm:mb-8 md:mb-10 reveal-up">
                         <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500 animate-pulse"></div>
                         <span class="font-mono text-white/40 text-xs sm:text-sm">Servicio de Domicilios</span>
                     </div>
-                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] text-white leading-[1.05] mb-6 sm:mb-8 md:mb-10 reveal-up">
+                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[clamp(4rem,6.5vw,6rem)] text-white leading-[1.05] mb-6 sm:mb-8 md:mb-10 reveal-up">
                         Conecta tu negocio con miles de clientes
                     </h1>
                     <p class="text-white/70 text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed reveal-up">
@@ -103,8 +57,8 @@
         <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 sm:mb-16 md:mb-24">
-                    <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">¿Cómo funciona?</h2>
-                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
+                    <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">¿Cómo funciona?</h2>
+                    <p class="text-muted text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Sistema completo de gestión de domicilios en tres pasos
                     </p>
                 </div>
@@ -116,7 +70,7 @@
                             1
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl md:text-3xl text-[#1c1d1f] mb-4 sm:mb-6">Recibe pedidos</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base md:text-lg leading-relaxed">
+                        <p class="text-muted text-sm sm:text-base md:text-lg leading-relaxed">
                             Los clientes hacen pedidos desde la app de Semper Fi. Tu negocio recibe notificaciones en tiempo real.
                         </p>
                     </div>
@@ -127,7 +81,7 @@
                             2
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl md:text-3xl text-[#1c1d1f] mb-4 sm:mb-6">Confirma y prepara</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base md:text-lg leading-relaxed">
+                        <p class="text-muted text-sm sm:text-base md:text-lg leading-relaxed">
                             Confirmas el pedido y preparas el producto mientras nuestro sistema asigna un repartidor automáticamente.
                         </p>
                     </div>
@@ -138,7 +92,7 @@
                             3
                         </div>
                         <h3 class="font-serif text-xl sm:text-2xl md:text-3xl text-[#1c1d1f] mb-4 sm:mb-6">Entrega y cobra</h3>
-                        <p class="text-[#70706f] text-sm sm:text-base md:text-lg leading-relaxed">
+                        <p class="text-muted text-sm sm:text-base md:text-lg leading-relaxed">
                             El repartidor recoge y entrega. Tú recibes el pago automáticamente en tu cuenta bancaria.
                         </p>
                     </div>
@@ -147,9 +101,9 @@
         </section>
 
         <!-- Benefits -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
-                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] text-white mb-12 sm:mb-16 md:mb-24 text-center reveal-up">Beneficios para tu negocio</h2>
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-white mb-12 sm:mb-16 md:mb-24 text-center reveal-up">Beneficios para tu negocio</h2>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
                     <!-- Benefit 1 -->
@@ -224,9 +178,9 @@
         </section>
 
         <!-- CTA -->
-        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
+        <section class="w-full bg-night py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[clamp(3rem,4.6vw,4.5rem)] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">
                     ¿Listo para crecer?
                 </h2>
                 <p class="text-white/70 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 reveal-up">
@@ -234,45 +188,8 @@
                 </p>
             </div>
         </section>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script type="module">
-    import Lenis from "https://esm.sh/lenis@1"
-  
-  gsap.registerPlugin(ScrollTrigger);
-
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
-
-  lenis.on('scroll', ScrollTrigger.update)
-
-  gsap.utils.toArray('.reveal-up').forEach(el => {
-    gsap.to(el, {
-      y: 0,
-      opacity: 1,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%"
-      }
-    });
-  });
-</script>
+</main>
 
 <app-footer></app-footer>
-
 </body>
 </html>
