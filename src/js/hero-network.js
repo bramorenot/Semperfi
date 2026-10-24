@@ -71,6 +71,8 @@ export function mountNetwork(host, { isMobile }) {
   document.addEventListener('visibilitychange', () => (document.hidden ? pause() : inView && play()));
 
   renderer.render(scene, camera);
-  requestAnimationFrame(() => { canvas.style.opacity = '1'; });
+  const poster = host.querySelector('svg');
+  if (poster) poster.style.transition = 'opacity 1s';
+  requestAnimationFrame(() => { canvas.style.opacity = '1'; if (poster) poster.style.opacity = '0'; });
   play();
 }
