@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://semperfi.vercel.app/sitemap.xml
