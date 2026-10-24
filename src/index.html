@@ -1,1077 +1,350 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semper Fi — Ecosistema Digital Inteligente para Popayán</title>
-  
-  <!-- Favicon - Logo de Semper Fi con fondo degradado -->
-  <link rel="icon" type="image/png" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  <link rel="apple-touch-icon" href="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" />
-  
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css"/>
+  <title>Semper Fi — Ecosistema digital inteligente para Popayán</title>
+  <meta name="description" content="Semper Fi integra domicilios, servicios de independientes, reservas y gestión de inventario con IA en una sola plataforma hecha en Popayán." />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="canonical" href="https://semperfi.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Semper Fi" />
+  <meta property="og:title" content="Semper Fi — Ecosistema digital inteligente para Popayán" />
+  <meta property="og:description" content="Semper Fi integra domicilios, servicios de independientes, reservas y gestión de inventario con IA en una sola plataforma hecha en Popayán." />
+  <meta property="og:url" content="https://semperfi.vercel.app/" />
+  <meta property="og:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Semper Fi — Ecosistema digital inteligente para Popayán" />
+  <meta name="twitter:description" content="Semper Fi integra domicilios, servicios de independientes, reservas y gestión de inventario con IA en una sola plataforma hecha en Popayán." />
+  <meta name="twitter:image" content="https://semperfi.vercel.app/img/og-semperfi.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/sora-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" type="image/avif" imagesrcset="/img/hero-phone-420.avif 420w, /img/hero-phone-696.avif 696w" imagesizes="(min-width: 1024px) 560px, 88vw" fetchpriority="high" />
+  <script>try{if(!sessionStorage.getItem('sf-pre')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('show-pre')}catch(e){}</script>
+  <style>#preloader{display:none}.show-pre #preloader{display:grid}</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Semper Fi","slogan":"Siempre fiel","url":"https://semperfi.vercel.app/","logo":"https://semperfi.vercel.app/img/logo-256.webp","email":"info@semperfi.app","address":{"@type":"PostalAddress","addressLocality":"Popayán","addressRegion":"Cauca","addressCountry":"CO"}}</script>
+  <script type="module" src="/js/home.js"></script>
+  <script>document.documentElement.classList.remove('no-js');</script>
   <script type="module" src="/main.js"></script>
 </head>
 <body>
-<div class="w-full bg-[#f9f8f6] text-[#1c1d1f] font-sans overflow-x-clip" data-kid="2" data-name="page wrapper" id="smooth-wrapper">
-    <div data-kid="2-1" data-name="main content container" id="smooth-content">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
-      
-      :root {
-        --color-bg-light: #f0f9ff;
-        --color-bg-light-alt: #e0f2fe;
-        --color-bg-dark: #0a1628;
-        --color-text-primary: #0f172a;
-        --color-text-secondary: #475569;
-        --color-primary: #2ebaf8;
-        --color-primary-dark: #1a9ad6;
-        --color-primary-light: #5dcbfb;
-        --font-serif: "Gestura Headline", Georgia, serif;
-        --font-sans: "Inter", sans-serif;
-        --font-mono: "Roboto Mono", monospace;
-      }
-
-      body {
-        background-color: var(--color-bg-light);
-        color: var(--color-text-primary);
-        font-family: var(--font-sans);
-      }
-
-      .font-serif { font-family: var(--font-serif); }
-      .font-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
-      
-      .btn-pill-light {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: white;
-        color: black;
-        transition: background-color 0.2s;
-      }
-      .btn-pill-dark {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        background-color: var(--color-bg-dark);
-        color: white;
-        transition: background-color 0.2s;
-      }
-      .btn-pill-outline {
-        padding: 0.6rem 1.5rem;
-        border-radius: 9999px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        border: 1px solid rgba(255,255,255,0.2);
-        color: white;
-      }
-
-      .divider-line {
-        height: 1px;
-        background-color: rgba(0,0,0,0.1);
-        width: 100%;
-        transform-origin: left;
-      }
-      .divider-line-dark {
-        height: 1px;
-        background-color: rgba(255,255,255,0.1);
-        width: 100%;
-        transform-origin: left;
-      }
-
-      .lenis.lenis-smooth { scroll-behavior: auto !important; }
-      .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-      .lenis.lenis-stopped { overflow: hidden; }
-
-      .reveal-text {
-        overflow: hidden;
-      }
-
-      .hero-title-mask {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
-
-      .feature-row-pinned {
-        display: flex;
-        align-items: center;
-        min-height: 100vh;
-        padding: 4rem 0;
-      }
-
-      /* Better text contrast for dark sections */
-      .feature-row-pinned h3 {
-        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-      }
-      
-      .feature-row-pinned p {
-        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-      }
-
-      /* Custom animations classes */
-      .reveal-up { transform: translateY(40px); opacity: 0; }
-      
-      /* Hide all buttons except header buttons */
-      .btn-pill-light:not(#main-nav .btn-pill-light),
-      .btn-pill-dark:not(#main-nav .btn-pill-dark),
-      .btn-pill-outline:not(#main-nav .btn-pill-outline),
-      section a[href="#"]:not(#main-nav a) {
-        display: none !important;
-      }
-      
-      /* Header color switching styles */
-      #main-nav {
-        transition: all 0.3s ease;
-        background: rgba(255, 255, 255, 0.1) !important;
-        backdrop-filter: blur(20px);
-      }
-      
-      #main-nav .nav-link-item,
-      #main-nav .logo-text {
-        color: white !important;
-        transition: color 0.3s ease;
-      }
-      
-      #main-nav .nav-btn-signin {
-        background-color: rgba(255, 255, 255, 0.2) !important;
-        color: white !important;
-        border-color: rgba(255, 255, 255, 0.3) !important;
-        transition: all 0.3s ease;
-      }
-      
-      #main-nav .nav-btn-demo {
-        background-color: #2ebaf8 !important;
-        color: white !important;
-        transition: all 0.3s ease;
-      }
-      
-      /* Light mode styles */
-      #main-nav.is-light {
-        background: rgba(255, 255, 255, 0.95) !important;
-        border-color: rgba(46, 186, 248, 0.2) !important;
-      }
-      
-      #main-nav.is-light .nav-link-item,
-      #main-nav.is-light .logo-text {
-        color: #0f172a !important;
-      }
-      
-      #main-nav.is-light .nav-btn-signin {
-        background-color: rgba(46, 186, 248, 0.1) !important;
-        color: #2ebaf8 !important;
-        border-color: rgba(46, 186, 248, 0.3) !important;
-      }
-      
-      #main-nav.is-light .nav-btn-signin:hover {
-        background-color: #2ebaf8 !important;
-        color: white !important;
-      }
-      
-      #main-nav.is-light .nav-btn-demo {
-        background-color: #2ebaf8 !important;
-        color: white !important;
-      }
-      
-      #main-nav.is-light .nav-btn-demo:hover {
-        background-color: #0a1628 !important;
-      }
-        </style>
-        <!-- Header -->
-        <app-header></app-header>
-        <!-- Hero Section - Imagen Hero.png -->
-        <section class="relative w-full bg-[#0a1628] p-2 sm:p-4 flex flex-col items-center" data-kid="2-1-2" data-name="hero section" id="hero-section" style="height: auto !important; min-height: 500px;">
-            <div class="relative w-full h-full rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl" data-kid="2-1-2-1" data-name="hero panel container" id="hero-panel" style="aspect-ratio: 1/1; max-height: 90vh;">
-                <!-- Imagen Hero.png como fondo principal -->
-                <img alt="Semper Fi Hero" class="absolute inset-0 w-full h-full object-contain sm:object-cover" data-kid="2-1-2-1-1" data-name="hero main image" decoding="async" id="hero-img" loading="eager" src="/Hero.png" style="object-position: center;"/>
-            </div>
-        </section>
-        <!-- Product Intro Section -->
-        <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 px-4 sm:px-10" data-kid="2-1-3" data-name="product intro section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-3-1" data-name="section container">
-                <!-- Header con imagen a la derecha -->
-                <div class="mb-16 sm:mb-32 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center" data-kid="2-1-3-1-1" data-name="section header">
-                    <div>
-                        <div class="flex items-center gap-2 mb-6 sm:mb-10 reveal-up" data-kid="2-1-3-1-1-1" data-name="product section label">
-                            <svg class="w-4 h-4 text-gray-400" data-kid="2-1-3-1-1-1-1" data-name="product icon" fill="currentColor" viewbox="0 0 24 24">
-                                <path d="M12 2L13.8 8.8L20.8 10.6L14 12.4L12.2 19.2L10.4 12.4L3.6 10.6L10.6 8.8L12 2Z">
-                                </path>
-                            </svg>
-                            <span class="font-mono text-gray-500 text-xs sm:text-sm" data-kid="2-1-3-1-1-1-2" data-name="section label text">
-                                Nuestros Servicios
-                            </span>
-                        </div>
-                        <h2 class="font-serif text-3xl sm:text-5xl lg:text-[4.5rem] text-[#1c1d1f] leading-[1.1] mb-6 sm:mb-10 reveal-up" data-kid="2-1-3-1-1-2" data-name="section title">
-                            Tres soluciones en una sola plataforma inteligente
-                        </h2>
-                        <p class="text-[#70706f] text-lg sm:text-xl lg:text-2xl leading-relaxed reveal-up" data-kid="2-1-3-1-1-3" data-name="section description text">
-                            Conectamos negocios, clientes y trabajadores independientes con tecnología e inteligencia artificial para optimizar cada proceso.
-                        </p>
-                    </div>
-                    <!-- Imagen de animación Semper Fi -->
-                    <div class="reveal-up flex items-center justify-center order-first lg:order-last">
-                        <img src="/Assets/animacion-semperFi.png" alt="Animación Semper Fi" class="w-full max-w-xs sm:max-w-md rounded-2xl sm:rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
-                    </div>
-                </div>
-                <div class="reveal-up" data-kid="2-1-3-1-2" data-name="investor section content">
-                    <div class="divider-line mb-6" data-kid="2-1-3-1-2-1" data-name="divider line">
-                    </div>
-                    <h3 class="font-serif text-3xl text-[#1c1d1f] mb-8" data-kid="2-1-3-1-2-2" data-name="section subtitle">
-                        Para comercios y negocios locales
-                    </h3>
-                    <div class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-black flex flex-col lg:flex-row min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]" data-kid="2-1-3-1-2-3" data-name="investor feature card">
-                        <div class="lg:w-1/2 p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center" data-kid="2-1-3-1-2-3-1" data-name="feature card text area">
-                            <div data-kid="2-1-3-1-2-3-1-1" data-name="feature card label area">
-                                <div class="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8 md:mb-12" data-kid="2-1-3-1-2-3-1-1-1" data-name="feature card tag indicator">
-                                    <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse" data-kid="2-1-3-1-2-3-1-1-1-1" data-name="pulsing indicator">
-                                    </span>
-                                    <span class="text-white/40 text-[9px] sm:text-[10px] uppercase tracking-widest font-mono" data-kid="2-1-3-1-2-3-1-1-1-2" data-name="feature tag label">
-                                        Gestión Inteligente
-                                    </span>
-                                </div>
-                                <h4 class="font-serif text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.2] mb-6 sm:mb-8 md:mb-10" data-kid="2-1-3-1-2-3-1-1-2" data-name="feature card headline">
-                                    Control total sobre tu negocio con inteligencia artificial
-                                </h4>
-                                <p class="text-white/50 text-base sm:text-lg md:text-xl leading-relaxed max-w-md" data-kid="2-1-3-1-2-3-1-1-3" data-name="feature card description">
-                                    Semper Fi Software te ayuda a controlar inventarios, calcular costos reales, analizar rentabilidad y tomar decisiones más inteligentes en tiempo real.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="lg:w-1/2 relative bg-[#141414] overflow-hidden min-h-[500px]" data-kid="2-1-3-1-2-3-2" data-name="feature card visual mockup">
-                            <img class="absolute inset-0 w-full h-full object-cover opacity-80" data-kid="2-1-3-1-2-3-2-1" data-name="feature card background image" decoding="async" id="investor-panel-img" loading="lazy" src="/Comida1.jpeg"/>
-                            <div class="absolute inset-0 flex flex-col justify-center px-12 space-y-6" data-kid="2-1-3-1-2-3-2-2" data-name="mockup info cards container">
-                                <div class="bg-black/60 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl transform translate-x-12 shadow-2xl max-w-[380px] self-end" data-kid="2-1-3-1-2-3-2-2-1" data-name="mockup info card 1">
-                                    <div class="flex justify-between items-center mb-3" data-kid="2-1-3-1-2-3-2-2-1-1" data-name="info card header">
-                                        <span class="text-white font-semibold text-base" data-kid="2-1-3-1-2-3-2-2-1-1-1" data-name="company name">
-                                            Restaurante Don Julio
-                                        </span>
-                                        <span class="text-[9px] text-green-400 font-mono tracking-widest bg-green-400/10 px-2 py-0.5 rounded" data-kid="2-1-3-1-2-3-2-2-1-1-2" data-name="company signal tag">
-                                            CRECIMIENTO
-                                        </span>
-                                    </div>
-                                    <p class="text-white/70 text-xs leading-relaxed mb-5" data-kid="2-1-3-1-2-3-2-2-1-2" data-name="company info text">
-                                        Se estima que puede aumentar sus ventas hasta en un 35%. Control de inventario y reducción de costos operativos.
-                                    </p>
-                                    <div class="flex gap-4 text-[8px] text-white/30 font-mono" data-kid="2-1-3-1-2-3-2-2-1-3" data-name="company meta data">
-                                        <span data-kid="2-1-3-1-2-3-2-2-1-3-1" data-name="meta location">
-                                            Popayán
-                                        </span>
-                                        <span data-kid="2-1-3-1-2-3-2-2-1-3-2" data-name="meta industry">
-                                            RESTAURANTE
-                                        </span>
-                                        <span data-kid="2-1-3-1-2-3-2-2-1-3-3" data-name="meta size">
-                                            PEQUEÑO NEGOCIO
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="bg-black/60 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl transform -translate-x-4 shadow-2xl max-w-[380px]" data-kid="2-1-3-1-2-3-2-2-2" data-name="mockup info card 2">
-                                    <div class="flex justify-between items-center mb-3" data-kid="2-1-3-1-2-3-2-2-2-1" data-name="info card header">
-                                        <span class="text-white font-semibold text-base" data-kid="2-1-3-1-2-3-2-2-2-1-1" data-name="company name">
-                                            Cafetería El Molino
-                                        </span>
-                                        <span class="text-[9px] text-blue-400 font-mono tracking-widest bg-blue-400/10 px-2 py-0.5 rounded" data-kid="2-1-3-1-2-3-2-2-2-1-2" data-name="company signal tag">
-                                            OPTIMIZADO
-                                        </span>
-                                    </div>
-                                    <p class="text-white/70 text-xs leading-relaxed mb-5" data-kid="2-1-3-1-2-3-2-2-2-2" data-name="company info text">
-                                        Se estima que puede mejorar el control de costos hasta en un 40%. Análisis detallado de rentabilidad por producto.
-                                    </p>
-                                    <div class="flex gap-4 text-[8px] text-white/30 font-mono" data-kid="2-1-3-1-2-3-2-2-2-3" data-name="company meta data">
-                                        <span data-kid="2-1-3-1-2-3-2-2-2-3-1" data-name="meta location">
-                                            Popayán
-                                        </span>
-                                        <span data-kid="2-1-3-1-2-3-2-2-2-3-2" data-name="meta industry">
-                                            CAFETERÍA
-                                        </span>
-                                        <span data-kid="2-1-3-1-2-3-2-2-2-3-3" data-name="meta size">
-                                            PEQUEÑO NEGOCIO
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- For B2B Sales -->
-        <section class="w-full bg-[#f9f8f6] py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8 lg:px-10" data-kid="2-1-4" data-name="b2b sales section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-4-1" data-name="section container">
-                <div class="divider-line mb-4 sm:mb-6" data-kid="2-1-4-1-1" data-name="divider line">
-                </div>
-                <h3 class="font-serif text-2xl sm:text-3xl text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10" data-kid="2-1-4-1-2" data-name="section title">
-                    Para todos los actores del ecosistema
-                </h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8" data-kid="2-1-4-1-3" data-name="features grid">
-                    <!-- Semper Fi App -->
-                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col min-h-[400px] sm:min-h-[500px] border border-black/5" data-kid="2-1-4-1-3-1" data-name="crm integration card">
-                        <div data-kid="2-1-4-1-3-1-1" data-name="card content area">
-                            <div class="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8 md:mb-10" data-kid="2-1-4-1-3-1-1-1" data-name="card label">
-                                <span class="w-2 h-2 rounded-full bg-green-500" data-kid="2-1-4-1-3-1-1-1-1" data-name="label dot">
-                                </span>
-                                <span class="text-gray-400 text-[9px] sm:text-[10px] font-mono" data-kid="2-1-4-1-3-1-1-1-2" data-name="label text">
-                                    Semper Fi App | DOMICILIOS Y SERVICIOS
-                                </span>
-                            </div>
-                            <h4 class="font-serif text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8" data-kid="2-1-4-1-3-1-1-2" data-name="card title">
-                                Conecta con tus clientes desde una sola plataforma
-                            </h4>
-                            <p class="text-gray-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 md:mb-12" data-kid="2-1-4-1-3-1-1-3" data-name="card description">
-                                Recibe pedidos, gestiona entregas y ofrece tus servicios. Todo integrado con control en tiempo real y tarifas justas.
-                            </p>
-                            <!-- Integration Mockup -->
-                            <div class="relative py-24 flex items-center justify-center" data-kid="2-1-4-1-3-1-1-4" data-name="integration mockup">
-                                <div class="flex flex-col gap-4 mr-24 relative z-10" data-kid="2-1-4-1-3-1-1-4-1" data-name="mockup tags">
-                                    <div class="px-5 py-3 bg-[#f9f8f6] border border-black/5 rounded-full text-[9px] font-mono text-gray-400 shadow-xs ring-1 ring-black/5" data-kid="2-1-4-1-3-1-1-4-1-1" data-name="tag financials">
-                                        PEDIDOS
-                                    </div>
-                                    <div class="px-5 py-3 bg-[#f9f8f6] border border-black/5 rounded-full text-[9px] font-mono text-gray-400 shadow-xs ring-1 ring-black/5" data-kid="2-1-4-1-3-1-1-4-1-2" data-name="tag contacts">
-                                        ENTREGAS
-                                    </div>
-                                    <div class="px-5 py-3 bg-[#f9f8f6] border border-black/5 rounded-full text-[9px] font-mono text-gray-400 shadow-xs ring-1 ring-black/5" data-kid="2-1-4-1-3-1-1-4-1-3" data-name="tag ownership">
-                                        SERVICIOS
-                                    </div>
-                                    <div class="px-5 py-3 bg-[#f9f8f6] border border-black/5 rounded-full text-[9px] font-mono text-gray-400 shadow-xs ring-1 ring-black/5" data-kid="2-1-4-1-3-1-1-4-1-4" data-name="tag news">
-                                        PAGOS EN TIEMPO REAL
-                                    </div>
-                                </div>
-                                <svg class="absolute left-[135px] top-[100px] w-[150px] h-[100px] pointer-events-none overflow-visible" data-kid="2-1-4-1-3-1-1-4-2" data-name="connection lines graphic" fill="none">
-                                    <path d="M0 -60 C 50 -60, 50 0, 110 0" stroke="rgba(0,0,0,0.08)" stroke-width="1">
-                                    </path>
-                                    <path d="M0 -25 C 50 -25, 50 0, 110 0" stroke="rgba(0,0,0,0.08)" stroke-width="1">
-                                    </path>
-                                    <path d="M0 10 C 50 10, 50 0, 110 0" stroke="rgba(0,0,0,0.08)" stroke-width="1">
-                                    </path>
-                                    <path d="M0 45 C 50 45, 50 0, 110 0" stroke="rgba(0,0,0,0.08)" stroke-width="1">
-                                    </path>
-                                    <circle cx="112" cy="0" fill="#22c55e" r="3">
-                                    </circle>
-                                </svg>
-                                <div class="px-10 py-6 bg-[#f9f8f6] rounded-2xl border border-black/5 flex items-center gap-4 shadow-md relative z-10 ring-1 ring-black/5" data-kid="2-1-4-1-3-1-1-4-3" data-name="crm mockup">
-                                    <span class="text-[10px] font-mono text-gray-500 tracking-widest uppercase font-semibold" data-kid="2-1-4-1-3-1-1-4-3-1" data-name="crm label">
-                                        Tu Negocio
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4 opacity-40 justify-center" data-kid="2-1-4-1-3-1-2" data-name="partner logos">
-                                <span class="text-xs font-mono text-gray-400">Disponible en Android e iOS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Semper Fi Software -->
-                    <div class="bg-white rounded-3xl p-16 flex flex-col justify-between min-h-[500px] border border-black/5" data-kid="2-1-4-1-3-2" data-name="api card">
-                        <div data-kid="2-1-4-1-3-2-1" data-name="card content area">
-                            <div class="flex items-center gap-3 mb-10" data-kid="2-1-4-1-3-2-1-1" data-name="card label">
-                                <span class="w-2 h-2 rounded-full bg-blue-500" data-kid="2-1-4-1-3-2-1-1-1" data-name="label dot">
-                                </span>
-                                <span class="text-gray-400 text-[10px] font-mono" data-kid="2-1-4-1-3-2-1-1-2" data-name="label text">
-                                    Semper Fi Software | GESTIÓN INTELIGENTE
-                                </span>
-                            </div>
-                            <h4 class="font-serif text-4xl mb-8" data-kid="2-1-4-1-3-2-1-2" data-name="card title">
-                                Controla tu negocio con inteligencia artificial
-                            </h4>
-                            <!-- JSON Mockup -->
-                            <div class="bg-[#080808] rounded-2xl p-8 font-mono text-[13px] leading-relaxed overflow-hidden relative border border-white/5 shadow-2xl" data-kid="2-1-4-1-3-2-1-3" data-name="json code mockup">
-                                <div class="absolute top-4 right-4 flex gap-1.5" data-kid="2-1-4-1-3-2-1-3-1" data-name="mockup window controls">
-                                    <span class="w-2 h-2 rounded-full bg-red-500/50" data-kid="2-1-4-1-3-2-1-3-1-1" data-name="close control">
-                                    </span>
-                                    <span class="w-2 h-2 rounded-full bg-yellow-500/50" data-kid="2-1-4-1-3-2-1-3-1-2" data-name="minimize control">
-                                    </span>
-                                    <span class="w-2 h-2 rounded-full bg-green-500/50" data-kid="2-1-4-1-3-2-1-3-1-3" data-name="maximize control">
-                                    </span>
-                                </div>
-                                <div class="text-white/30 mb-6 flex justify-between items-center border-b border-white/10 pb-4" data-kid="2-1-4-1-3-2-1-3-2" data-name="mockup header">
-                                    <span class="text-[11px]" data-kid="2-1-4-1-3-2-1-3-2-1" data-name="request method">
-                                        <span class="text-blue-400" data-kid="2-1-4-1-3-2-1-3-2-1-1" data-name="method get">
-                                            GET
-                                        </span>
-                                        /v1/companies/
-                                        <span class="text-green-400" data-kid="2-1-4-1-3-2-1-3-2-1-2" data-name="endpoint id">
-                                            {id}
-                                        </span>
-                                    </span>
-                                    <span class="text-green-400 text-[10px] bg-green-400/10 px-2 py-0.5 rounded" data-kid="2-1-4-1-3-2-1-3-2-2" data-name="response status">
-                                        200 OK
-                                    </span>
-                                </div>
-                                <div class="space-y-1" data-kid="2-1-4-1-3-2-1-3-3" data-name="mockup json content">
-                                    <div class="text-white/60" data-kid="2-1-4-1-3-2-1-3-3-1" data-name="json brace open">
-                                        {
-                                    </div>
-                                    <div class="pl-5" data-kid="2-1-4-1-3-2-1-3-3-2" data-name="json name field">
-                                        <span class="text-blue-300" data-kid="2-1-4-1-3-2-1-3-3-2-1" data-name="json name key">
-                                            "name"
-                                        </span>
-                                        :
-                                        <span class="text-green-200" data-kid="2-1-4-1-3-2-1-3-3-2-2" data-name="json name value">
-                                            "Restaurante Don Julio"
-                                        </span>
-                                        ,
-                                    </div>
-                                    <div class="pl-5" data-kid="2-1-4-1-3-2-1-3-3-3" data-name="json revenue field">
-                                        <span class="text-blue-300" data-kid="2-1-4-1-3-2-1-3-3-3-1" data-name="json revenue key">
-                                            "ventas_mes"
-                                        </span>
-                                        :
-                                        <span class="text-green-200" data-kid="2-1-4-1-3-2-1-3-3-3-2" data-name="json revenue value">
-                                            "$12.8M"
-                                        </span>
-                                        ,
-                                    </div>
-                                    <div class="pl-5" data-kid="2-1-4-1-3-2-1-3-3-4" data-name="json ebit field">
-                                        <span class="text-blue-300" data-kid="2-1-4-1-3-2-1-3-3-4-1" data-name="json ebit key">
-                                            "margen_ganancia"
-                                        </span>
-                                        :
-                                        <span class="text-green-200" data-kid="2-1-4-1-3-2-1-3-3-4-2" data-name="json ebit value">
-                                            "28.5%"
-                                        </span>
-                                        ,
-                                    </div>
-                                    <div class="pl-5" data-kid="2-1-4-1-3-2-1-3-3-5" data-name="json signals field">
-                                        <span class="text-blue-300" data-kid="2-1-4-1-3-2-1-3-3-5-1" data-name="json signals key">
-                                            "estado"
-                                        </span>
-                                        :
-                                        <span class="text-green-200" data-kid="2-1-4-1-3-2-1-3-3-5-2" data-name="json signals value">
-                                            "Crecimiento"
-                                        </span>
-                                        ,
-                                    </div>
-                                    <div class="pl-5" data-kid="2-1-4-1-3-2-1-3-3-6" data-name="json status field">
-                                        <span class="text-blue-300" data-kid="2-1-4-1-3-2-1-3-3-6-1" data-name="json status key">
-                                            "control_inventario"
-                                        </span>
-                                        :
-                                        <span class="text-green-200" data-kid="2-1-4-1-3-2-1-3-3-6-2" data-name="json status value">
-                                            "Activo"
-                                        </span>
-                                    </div>
-                                    <div class="text-white/60" data-kid="2-1-4-1-3-2-1-3-3-7" data-name="json brace close">
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Dark Database Section -->
-        <section class="w-full bg-[#080808] py-20 px-10 relative overflow-hidden" data-kid="2-1-5" data-name="database section">
-            <!-- Background Earth -->
-            <img class="absolute inset-0 w-full h-full object-cover opacity-20 scale-125" data-kid="2-1-5-1" data-name="earth background image" decoding="async" id="database-bg-img" loading="lazy" src="https://cdn.prod.website-files.com/68513e75563291f5d48ada9b/696df7aeb646a7a2198327de_36fa0c4d18a844367e1911df246f6613_earth.webp?auto=format&w=2000&q=80&fit=crop"/>
-            <div class="relative z-10 max-w-7xl mx-auto text-center" data-kid="2-1-5-2" data-name="section content">
-                <h2 class="font-serif text-[4.5rem] text-white leading-[1.1] mb-10 reveal-up" data-kid="2-1-5-2-1" data-name="section headline">
-                    Un ecosistema digital completo desde Popayán para el Mundo
-                </h2>
-                <p class="text-white/60 text-2xl max-w-2xl mx-auto mb-8 reveal-up" data-kid="2-1-5-2-2" data-name="section description">
-                    Semper Fi conecta comercios, clientes y trabajadores en un ecosistema digital completo e inteligente.
-                </p>
-                <!-- Metrics -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 text-left border-t border-white/10 pt-16 reveal-up" data-kid="2-1-5-2-4" data-name="metrics grid">
-                    <div class="metric-item" data-kid="2-1-5-2-4-1" data-name="metric item">
-                        <div class="text-[5rem] text-white font-light mb-6 tracking-tighter counter-val" data-dynamic="true" data-kid="2-1-5-2-4-1-1" data-name="metric counter value" data-reason="number incremented by script" data-target="100">
-                            100+
-                        </div>
-                        <p class="text-white/50 text-base leading-relaxed max-w-[240px]" data-kid="2-1-5-2-4-1-2" data-name="metric label">
-                            Analizados comercios para mejorar la eficiencia en la entrega de domicilios
-                        </p>
-                    </div>
-                    <div class="metric-item" data-kid="2-1-5-2-4-2" data-name="metric item">
-                        <div class="text-[5rem] text-white font-light mb-6 tracking-tighter counter-val" data-dynamic="true" data-kid="2-1-5-2-4-2-1" data-name="metric counter value" data-reason="number incremented by script" data-target="500">
-                            500+
-                        </div>
-                        <p class="text-white/50 text-base leading-relaxed max-w-[240px]" data-kid="2-1-5-2-4-2-2" data-name="metric label">
-                            Estudio de trabajos independientes para garantizar un buen servicio para usuarios finales y trabajadores
-                        </p>
-                    </div>
-                    <div class="metric-item" data-kid="2-1-5-2-4-3" data-name="metric item">
-                        <div class="text-[5rem] text-white font-light mb-6 tracking-tighter counter-val" data-dynamic="true" data-kid="2-1-5-2-4-3-1" data-name="metric counter value" data-reason="number incremented by script" data-target="24">
-                            24/7
-                        </div>
-                        <p class="text-white/50 text-base leading-relaxed max-w-[240px]" data-kid="2-1-5-2-4-3-2" data-name="metric label">
-                            Monitoreo en tiempo real de pedidos, entregas e inventarios
-                        </p>
-                    </div>
-                    <div class="metric-item" data-kid="2-1-5-2-4-4" data-name="metric item">
-                        <div class="text-[5rem] text-white font-light mb-6 tracking-tighter counter-val" data-dynamic="true" data-kid="2-1-5-2-4-4-1" data-name="metric counter value" data-reason="number incremented by script" data-target="3">
-                            3
-                        </div>
-                        <p class="text-white/50 text-base leading-relaxed max-w-[240px]" data-kid="2-1-5-2-4-4-2" data-name="metric label">
-                            Domicilios, Servicios e Inteligencia Artificial
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pinned Feature Rows (Dark) -->
-        <section class="w-full bg-[#080808]" data-kid="2-1-6" data-name="feature pin container" id="features-pin-container">
-            <!-- Feature 01 -->
-            <div class="feature-row-pinned px-10 border-b border-white/5" data-kid="2-1-6-1" data-name="pinned feature row 1">
-                <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center w-full" data-kid="2-1-6-1-1" data-name="feature content">
-                    <div class="lg:w-1/2 py-20" data-kid="2-1-6-1-1-1" data-name="feature text side">
-                        <span class="text-white/40 text-[10px] font-mono mb-10 block" data-kid="2-1-6-1-1-1-1" data-name="feature index">
-                            01
-                        </span>
-                        <h3 class="font-serif text-6xl text-white mb-10 leading-[1.1] drop-shadow-lg" data-kid="2-1-6-1-1-1-2" data-name="feature title">
-                            "Conecta con más clientes desde tu negocio"
-                        </h3>
-                        <p class="text-white/90 text-2xl leading-relaxed mb-10 drop-shadow-md" data-kid="2-1-6-1-1-1-3" data-name="feature description 1">
-                            Semper Fi te permite recibir pedidos de múltiples plataformas, gestionar entregas en tiempo real y llegar a más personas sin invertir en infraestructura propia. Todo desde una app simple y accesible.
-                        </p>
-                        <p class="text-white/70 text-lg mb-12 drop-shadow-md" data-kid="2-1-6-1-1-1-4" data-name="feature description 2">
-                            El resultado: más ventas, menos costos operativos y total visibilidad de tu negocio en el mercado digital local.
-                        </p>
-                        <a class="btn-pill-light w-fit px-10 py-4 text-base" data-kid="2-1-6-1-1-1-5" data-name="book a demo button" href="#">
-                            Únete ahora
-                        </a>
-                    </div>
-                    <div class="lg:w-1/2 relative rounded-[2.5rem] overflow-hidden aspect-[4/3] bg-neutral-900" data-kid="2-1-6-1-1-2" data-name="feature visual side">
-                        <img alt="Feature 1" class="w-full h-full object-cover opacity-90" data-kid="2-1-6-1-1-2-1" data-name="feature image" decoding="async" loading="lazy" src="https://cdn.prod.website-files.com/68513e75563291f5d48ada9b/69ef4da6d488608284e34ede_858d93c661e2f6af533ebbe230222d4e_desktop%20for%20website%2065-p-2000.webp?auto=format&w=1200&q=80&fit=crop"/>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature 02 -->
-            <div class="feature-row-pinned px-10 border-b border-white/5" data-kid="2-1-6-2" data-name="pinned feature row 2">
-                <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center w-full" data-kid="2-1-6-2-1" data-name="feature content">
-                    <div class="lg:w-1/2 order-2 lg:order-1 relative rounded-[2.5rem] overflow-hidden aspect-[4/3] bg-[#c5dde8]" data-kid="2-1-6-2-1-1" data-name="feature visual side">
-                        <img alt="Feature 2" class="w-full h-full object-contain" data-kid="2-1-6-2-1-1-1" data-name="feature image" decoding="async" loading="lazy" src="/Assets/Efiia-image.png"/>
-                    </div>
-                    <div class="lg:w-1/2 order-1 lg:order-2 py-20" data-kid="2-1-6-2-1-2" data-name="feature text side">
-                        <span class="text-white/40 text-[10px] font-mono mb-10 block" data-kid="2-1-6-2-1-2-1" data-name="feature index">
-                            02
-                        </span>
-                        <h3 class="font-serif text-6xl text-white mb-10 leading-[1.1] drop-shadow-lg" data-kid="2-1-6-2-1-2-2" data-name="feature title">
-                            Toma decisiones inteligentes con datos en tiempo real
-                        </h3>
-                        <p class="text-white/90 text-2xl leading-relaxed drop-shadow-md" data-kid="2-1-6-2-1-2-3" data-name="feature description">
-                            Semper Fi Software monitorea inventarios, ventas, costos y rentabilidad. Con inteligencia artificial integrada, sabrás exactamente cuánto ganas por producto y qué decisiones tomar para crecer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- News Section -->
-        <section class="w-full bg-[#f9f8f6] py-40 px-10" data-kid="2-1-7" data-name="news section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-7-1" data-name="news container">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-8" data-kid="2-1-7-1-1" data-name="header area">
-                    <div data-kid="2-1-7-1-1-1" data-name="title area">
-                        <div class="flex items-center gap-2 mb-8" data-kid="2-1-7-1-1-1-1" data-name="label area">
-                            <span class="font-mono text-gray-400" data-kid="2-1-7-1-1-1-1-1" data-name="news label">
-                                Nuestras Células
-                            </span>
-                        </div>
-                        <h2 class="font-serif text-[4.5rem] text-[#1c1d1f]" data-kid="2-1-7-1-1-1-2" data-name="section title">
-                            Cuatro células conectadas en un solo ecosistema
-                        </h2>
-                    </div>
-                    <a class="text-[#70706f] hover:text-black font-sans text-lg flex items-center gap-2 mb-2 group" data-kid="2-1-7-1-1-2" data-name="all news link" href="#">
-                        Ver todas
-                        <span class="group-hover:translate-x-1 transition-transform" data-kid="2-1-7-1-1-2-1" data-name="arrow icon">
-                            ?
-                        </span>
-                    </a>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12" data-kid="2-1-7-1-2" data-name="news card grid">
-                    <!-- Card 1 - Domicilios -->
-                    <div class="group block" data-kid="2-1-7-1-2-1" data-name="news card 1">
-                        <div class="rounded-2xl overflow-hidden mb-10 aspect-[16/10] bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center" data-kid="2-1-7-1-2-1-1" data-name="card image wrapper">
-                            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-serif text-[1.75rem] mb-6 leading-[1.2]" data-kid="2-1-7-1-2-1-2" data-name="card title">
-                            Domicilios
-                        </h3>
-                        <p class="text-[#70706f] text-base leading-relaxed mb-8" data-kid="2-1-7-1-2-1-3" data-name="card description">
-                            Conecta clientes con comercios afiliados. Gestión logística inteligente que optimiza tiempos de entrega y reduce costos sin necesidad de infraestructura propia.
-                        </p>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest font-mono" data-kid="2-1-7-1-2-1-4" data-name="read more link">
-                            Logística optimizada
-                        </span>
-                    </div>
-                    <!-- Card 2 - Servicios -->
-                    <div class="group block" data-kid="2-1-7-1-2-2" data-name="news card 2">
-                        <div class="rounded-2xl overflow-hidden mb-10 aspect-[16/10] bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center" data-kid="2-1-7-1-2-2-1" data-name="card image wrapper">
-                            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-serif text-[1.75rem] mb-6 leading-[1.2]" data-kid="2-1-7-1-2-2-2" data-name="card title">
-                            Servicios
-                        </h3>
-                        <p class="text-[#70706f] text-base leading-relaxed mb-8" data-kid="2-1-7-1-2-2-3" data-name="card description">
-                            Trabajadores independientes (mecánicos, peluqueros, cerrajeros) ofrecen sus servicios directamente. Conecta oferta y demanda de manera rápida y organizada.
-                        </p>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest font-mono" data-kid="2-1-7-1-2-2-4" data-name="read more link">
-                            Conexión directa
-                        </span>
-                    </div>
-                    <!-- Card 3 - Reservas -->
-                    <div class="group block" data-kid="2-1-7-1-2-3" data-name="news card 3">
-                        <div class="rounded-2xl overflow-hidden mb-10 aspect-[16/10] bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center" data-kid="2-1-7-1-2-3-1" data-name="card image wrapper">
-                            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-serif text-[1.75rem] mb-6 leading-[1.2]" data-kid="2-1-7-1-2-3-2" data-name="card title">
-                            Reservas
-                        </h3>
-                        <p class="text-[#70706f] text-base leading-relaxed mb-8" data-kid="2-1-7-1-2-3-3" data-name="card description">
-                            Sistema de reservas para moteles, hoteles y restaurantes. Gestiona disponibilidad, confirmaciones y pagos desde una plataforma centralizada.
-                        </p>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest font-mono" data-kid="2-1-7-1-2-3-4" data-name="read more link">
-                            Gestión centralizada
-                        </span>
-                    </div>
-                    <!-- Card 4 - Stock -->
-                    <div class="group block" data-kid="2-1-7-1-2-4" data-name="news card 4">
-                        <div class="rounded-2xl overflow-hidden mb-10 aspect-[16/10] bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center" data-kid="2-1-7-1-2-4-1" data-name="card image wrapper">
-                            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                            </svg>
-                        </div>
-                        <h3 class="font-serif text-[1.75rem] mb-6 leading-[1.2]" data-kid="2-1-7-1-2-4-2" data-name="card title">
-                            Stock (Inventario)
-                        </h3>
-                        <p class="text-[#70706f] text-base leading-relaxed mb-8" data-kid="2-1-7-1-2-4-3" data-name="card description">
-                            Control total de inventarios, costos reales por producto, ventas, gastos y rentabilidad. Claridad financiera con IA para tomar decisiones eficientes.
-                        </p>
-                        <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest font-mono" data-kid="2-1-7-1-2-4-4" data-name="read more link">
-                            Control financiero
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Intelligence Rows (Dark) -->
-        <section class="w-full bg-[#080808] px-10" data-kid="2-1-8" data-name="intelligence section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-8-1" data-name="intelligence rows container">
-                <!-- Intelligence Row 01 -->
-                <div class="intelligence-row py-40 border-b border-white/10 flex flex-col lg:flex-row gap-24 items-center" data-kid="2-1-8-1-1" data-name="row 1">
-                    <div class="lg:w-1/2" data-kid="2-1-8-1-1-1" data-name="row text area">
-                        <span class="text-white/40 text-[10px] font-mono mb-10 block" data-kid="2-1-8-1-1-1-1" data-name="row index">
-                            01
-                        </span>
-                        <h3 class="font-serif text-[3.5rem] text-white mb-10 leading-[1.1]" data-kid="2-1-8-1-1-1-2" data-name="row title">
-                            Domicilios: Logística inteligente para tu ciudad
-                        </h3>
-                        <p class="text-white/60 text-lg leading-relaxed mb-10" data-kid="2-1-8-1-1-1-3" data-name="row description 1">
-                            Conecta clientes con múltiples comercios afiliados. Los pedidos se gestionan y asignan automáticamente a repartidores disponibles, optimizando tiempos de entrega y reduciendo costos operativos sin necesidad de infraestructura propia.
-                        </p>
-                        <p class="text-white/30 text-base italic" data-kid="2-1-8-1-1-1-4" data-name="row description 2">
-                            Más ventas para los negocios, mejores precios para los clientes, ingresos flexibles para repartidores.
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2 relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-neutral-900" data-kid="2-1-8-1-1-2" data-name="row image area">
-                        <img alt="Intelligence 1" class="w-full h-full object-contain" data-kid="2-1-8-1-1-2-1" data-name="row image" decoding="async" loading="lazy" src="/Assets/conectandoTC.png"/>
-                    </div>
-                </div>
-                <!-- Intelligence Row 02 -->
-                <div class="intelligence-row py-40 border-b border-white/10 flex flex-col lg:flex-row gap-24 items-center" data-kid="2-1-8-1-2" data-name="row 2">
-                    <div class="lg:w-1/2 order-2 lg:order-1 relative rounded-[2rem] overflow-hidden aspect-[4/3]" data-kid="2-1-8-1-2-1" data-name="row image area">
-                        <img alt="Intelligence 2" class="w-full h-full object-cover" data-kid="2-1-8-1-2-1-1" data-name="row image" decoding="async" loading="lazy" src="https://cdn.prod.website-files.com/68513e75563291f5d48ada9b/69f0c2b191c0b784171a069a_689158af5523883fdeb2e16b48aa4cb6_Deep%20research-p-2000.webp?auto=format&w=1200&q=80&fit=crop"/>
-                    </div>
-                    <div class="lg:w-1/2 order-1 lg:order-2" data-kid="2-1-8-1-2-2" data-name="row text area">
-                        <span class="text-white/40 text-[10px] font-mono mb-10 block" data-kid="2-1-8-1-2-2-1" data-name="row index">
-                            02
-                        </span>
-                        <h3 class="font-serif text-[3.5rem] text-white mb-10 leading-[1.1]" data-kid="2-1-8-1-2-2-2" data-name="row title">
-                            Servicios: Conecta profesionales con clientes
-                        </h3>
-                        <p class="text-white/60 text-lg leading-relaxed mb-12" data-kid="2-1-8-1-2-2-3" data-name="row description">
-                            Trabajadores independientes como mecánicos, peluqueros, cerrajeros y otros oficios pueden publicar sus servicios con sus propios precios. La plataforma facilita la conexión directa entre oferta y demanda local de manera rápida, organizada y confiable.
-                        </p>
-                        <a class="btn-pill-light w-fit" data-kid="2-1-8-1-2-2-4" data-name="book a demo button" href="#">
-                            Ofrece tus servicios
-                        </a>
-                    </div>
-                </div>
-                </div>`n        </section>`n        <!-- Chat Showcase -->
-        <section class="w-full bg-[#080808] py-40 px-10" data-kid="2-1-9" data-name="chat showcase section">
-            <div class="max-w-6xl mx-auto rounded-[3rem] overflow-hidden bg-white/5 border border-white/10 aspect-video relative group shadow-2xl" data-kid="2-1-9-1" data-name="chat mockup wrapper">
-                <div class="absolute inset-0 flex items-center justify-center p-12" data-kid="2-1-9-1-1" data-name="chat interface">
-                    <div class="w-full h-full bg-[#f9f8f6] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col border border-black/5" data-kid="2-1-9-1-1-1" data-name="chat application window">
-                        <div class="w-full h-12 bg-white flex items-center px-6 gap-3 border-b border-black/5" data-kid="2-1-9-1-1-1-1" data-name="window bar">
-                            <div class="flex gap-2" data-kid="2-1-9-1-1-1-1-1" data-name="window controls">
-                                <div class="w-3 h-3 rounded-full bg-red-400/20" data-kid="2-1-9-1-1-1-1-1-1" data-name="control">
-                                </div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-400/20" data-kid="2-1-9-1-1-1-1-1-2" data-name="control">
-                                </div>
-                                <div class="w-3 h-3 rounded-full bg-green-400/20" data-kid="2-1-9-1-1-1-1-1-3" data-name="control">
-                                </div>
-                            </div>
-                            <div class="flex-1 max-w-sm mx-auto bg-gray-100 h-6 rounded-full text-[10px] flex items-center px-4 text-gray-400 font-mono" data-kid="2-1-9-1-1-1-1-2" data-name="url bar">
-                                app.semperfi.co
-                            </div>
-                            <div class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center" data-kid="2-1-9-1-1-1-1-3" data-name="menu icon">
-                                <svg class="w-3 h-3" data-kid="2-1-9-1-1-1-1-3-1" data-name="menu icon lines" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                                    <path d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="flex-1 p-12 overflow-y-auto bg-gradient-to-b from-white to-[#f0efed]" data-kid="2-1-9-1-1-1-2" data-name="chat history area">
-                            <div class="max-w-2xl mx-auto space-y-8" data-kid="2-1-9-1-1-1-2-1" data-name="chat thread">
-                                <div class="flex flex-col items-end" data-kid="2-1-9-1-1-1-2-1-1" data-name="user message">
-                                    <div class="bg-white border border-black/5 p-5 rounded-3xl rounded-br-none text-sm text-gray-700 shadow-sm max-w-lg" data-kid="2-1-9-1-1-1-2-1-1-1" data-name="user message bubble">
-                                        ¿Cómo está el rendimiento del Restaurante Don Julio en el último mes?
-                                    </div>
-                                </div>
-                                <div class="flex gap-4" data-kid="2-1-9-1-1-1-2-1-2" data-name="ai message">
-                                    <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center shrink-0 mt-1" data-kid="2-1-9-1-1-1-2-1-2-1" data-name="ai avatar">
-                                        <svg class="w-4 h-4 text-white" data-kid="2-1-9-1-1-1-2-1-2-1-1" data-name="ai avatar icon" fill="currentColor" viewbox="0 0 24 24">
-                                            <path d="M12 2L13.8 8.8L20.8 10.6L14 12.4L12.2 19.2L10.4 12.4L3.6 10.6L10.6 8.8L12 2Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="bg-[#080808] text-white p-8 rounded-[2rem] rounded-tl-none text-sm leading-relaxed shadow-xl border border-white/5" data-kid="2-1-9-1-1-1-2-1-2-2" data-name="ai message bubble">
-                                        <p class="text-white/90 mb-4 font-serif text-lg" data-kid="2-1-9-1-1-1-2-1-2-2-1" data-name="ai message title">
-                                            El Restaurante Don Julio ha tenido un excelente desempeño en las últimas 4 semanas:
-                                        </p>
-                                        <ul class="space-y-4 text-white/70" data-kid="2-1-9-1-1-1-2-1-2-2-2" data-name="ai list items">
-                                            <li class="flex items-start gap-3" data-kid="2-1-9-1-1-1-2-1-2-2-2-1" data-name="list item 1">
-                                                <span class="w-1.5 h-1.5 rounded-full bg-green-400 mt-2 shrink-0" data-kid="2-1-9-1-1-1-2-1-2-2-2-1-1" data-name="list marker">
-                                                </span>
-                                                <span data-kid="2-1-9-1-1-1-2-1-2-2-2-1-2" data-name="list text">
-                                                    Ventas aumentaron 15% respecto al mes anterior, alcanzando $14.2M COP.
-                                                </span>
-                                            </li>
-                                            <li class="flex items-start gap-3" data-kid="2-1-9-1-1-1-2-1-2-2-2-2" data-name="list item 2">
-                                                <span class="w-1.5 h-1.5 rounded-full bg-green-400 mt-2 shrink-0" data-kid="2-1-9-1-1-1-2-1-2-2-2-2-1" data-name="list marker">
-                                                </span>
-                                                <span data-kid="2-1-9-1-1-1-2-1-2-2-2-2-2" data-name="list text">
-                                                    Margen de ganancia mejoró de 26% a 28.5% gracias a mejor control de inventario.
-                                                </span>
-                                            </li>
-                                            <li class="flex items-start gap-3" data-kid="2-1-9-1-1-1-2-1-2-2-2-3" data-name="list item 3">
-                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 shrink-0" data-kid="2-1-9-1-1-1-2-1-2-2-2-3-1" data-name="list marker">
-                                                </span>
-                                                <span data-kid="2-1-9-1-1-1-2-1-2-2-2-3-2" data-name="list text">
-                                                    362 pedidos completados vía Semper Fi, con tiempo promedio de entrega de 28 minutos.
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- App Mockups Section -->
-        <section class="w-full bg-[#f9f8f6] py-40 px-10" data-kid="2-1-10" data-name="app showcase section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-10-1" data-name="section container">
-                <div class="mb-24 text-center" data-kid="2-1-10-1-1" data-name="section header">
-                    <div class="flex items-center justify-center gap-2 mb-10 reveal-up" data-kid="2-1-10-1-1-1" data-name="section label">
-                        <span class="font-mono text-gray-500" data-kid="2-1-10-1-1-1-1" data-name="section label text">
-                            Nuestra Aplicación
-                        </span>
-                    </div>
-                    <h2 class="font-serif text-[4.5rem] text-[#1c1d1f] leading-[1.1] mb-10 reveal-up" data-kid="2-1-10-1-1-2" data-name="section title">
-                        Experiencia digital simple y poderosa
-                    </h2>
-                    <p class="text-[#70706f] text-2xl max-w-3xl mx-auto leading-relaxed reveal-up" data-kid="2-1-10-1-1-3" data-name="section description">
-                        Una interfaz diseñada para que comercios, clientes y trabajadores gestionen todo desde sus dispositivos móviles.
-                    </p>
-                </div>
-                
-                <!-- Phone Mockups Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32" data-kid="2-1-10-1-2" data-name="mockups grid">
-                    <!-- Login Screen -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-1" data-name="mockup 1">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-1-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-1-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-1-1-2" data-name="screen">
-                                <img alt="Login Screen" class="w-full h-full object-cover" src="/login.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-1-2" data-name="mockup label">Inicio de Sesión</p>
-                    </div>
-
-                    <!-- Home Screen -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-2" data-name="mockup 2">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-2-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-2-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-2-1-2" data-name="screen">
-                                <img alt="Home Screen" class="w-full h-full object-cover" src="/Inicio.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-2-2" data-name="mockup label">Pantalla Principal</p>
-                    </div>
-
-                    <!-- Profile Screen -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-2-3" data-name="mockup 3">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-2-3-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-2-3-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-2-3-1-2" data-name="screen">
-                                <img alt="Profile Screen" class="w-full h-full object-cover" src="/Perfiles.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-2-3-2" data-name="mockup label">Perfiles de Usuario</p>
-                    </div>
-                </div>
-
-                <!-- Additional Screens Row -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12" data-kid="2-1-10-1-3" data-name="additional mockups">
-                    <!-- Reservations Screen -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-1" data-name="mockup 4">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-1-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-1-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-1-1-2" data-name="screen">
-                                <img alt="Reservations Screen" class="w-full h-full object-cover" src="/Reservas.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-1-2" data-name="mockup label">Sistema de Reservas</p>
-                    </div>
-
-                    <!-- Food Menu 1 -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-2" data-name="mockup 5">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-2-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-2-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-2-1-2" data-name="screen">
-                                <img alt="Food Menu" class="w-full h-full object-cover" src="/Comida1.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-2-2" data-name="mockup label">Menú Digital</p>
-                    </div>
-
-                    <!-- Food Menu 2 -->
-                    <div class="flex flex-col items-center group" data-kid="2-1-10-1-3-3" data-name="mockup 6">
-                        <div class="relative w-full max-w-[280px] aspect-[9/18] bg-black rounded-[2rem] sm:rounded-[3rem] p-2 sm:p-3 shadow-2xl group-hover:scale-105 transition-transform duration-500" data-kid="2-1-10-1-3-3-1" data-name="phone frame">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 h-6 sm:h-7 bg-black rounded-b-2xl sm:rounded-b-3xl z-10" data-kid="2-1-10-1-3-3-1-1" data-name="notch"></div>
-                            <div class="w-full h-full bg-white rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden" data-kid="2-1-10-1-3-3-1-2" data-name="screen">
-                                <img alt="Food Orders" class="w-full h-full object-cover" src="/Comida2.jpeg" loading="lazy"/>
-                            </div>
-                        </div>
-                        <p class="mt-6 sm:mt-8 text-[#1c1d1f] text-base sm:text-lg font-semibold text-center" data-kid="2-1-10-1-3-3-2" data-name="mockup label">Pedidos de Comida</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Gallery Section -->
-        <section class="w-full bg-[#080808] py-40 px-10 border-t border-white/5" data-kid="2-1-10-2" data-name="services gallery section">
-            <div class="max-w-7xl mx-auto" data-kid="2-1-10-2-1" data-name="section container">
-                <div class="mb-24 text-center" data-kid="2-1-10-2-1-1" data-name="section header">
-                    <div class="flex items-center justify-center gap-2 mb-10 reveal-up" data-kid="2-1-10-2-1-1-1" data-name="section label">
-                        <span class="font-mono text-white/40 text-[10px] uppercase tracking-widest" data-kid="2-1-10-2-1-1-1-1" data-name="section label text">
-                            Servicios Disponibles
-                        </span>
-                    </div>
-                    <h2 class="font-serif text-[4.5rem] text-white leading-[1.1] mb-10 reveal-up" data-kid="2-1-10-2-1-1-2" data-name="section title">
-                        Trabajadores y profesionales listos para ayudarte
-                    </h2>
-                    <p class="text-white/60 text-2xl max-w-3xl mx-auto leading-relaxed reveal-up" data-kid="2-1-10-2-1-1-3" data-name="section description">
-                        Desde reparaciones del hogar hasta servicios profesionales, encuentra lo que necesitas en un solo lugar.
-                    </p>
-                </div>
-                
-                <!-- Services Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-kid="2-1-10-2-1-2" data-name="services grid">
-                    <!-- Service 1 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-blue-900/20 to-purple-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-1" data-name="service card 1">
-                        <img alt="Servicio 1" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service1.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-green-900/20 to-teal-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-2" data-name="service card 2">
-                        <img alt="Servicio 2" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service2.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-orange-900/20 to-red-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-3" data-name="service card 3">
-                        <img alt="Servicio 3" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service3.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-pink-900/20 to-purple-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-4" data-name="service card 4">
-                        <img alt="Servicio 4" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service4.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-indigo-900/20 to-blue-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-5" data-name="service card 5">
-                        <img alt="Servicio 5" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service5.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 6 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-yellow-900/20 to-orange-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-6" data-name="service card 6">
-                        <img alt="Servicio 6" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service6.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 7 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-red-900/20 to-pink-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-7" data-name="service card 7">
-                        <img alt="Servicio 7" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service7.png" loading="lazy"/>
-                    </div>
-
-                    <!-- Service 8 -->
-                    <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-teal-900/20 to-green-900/20 hover:scale-105 transition-transform duration-500" data-kid="2-1-10-2-1-2-8" data-name="service card 8">
-                        <img alt="Servicio 8" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service8.png" loading="lazy"/>
-                    </div>
-                </div>
-
-                <!-- CTA Button -->
-                <div class="flex justify-center mt-20" data-kid="2-1-10-2-1-3" data-name="cta area">
-                    <a class="btn-pill-light px-10 py-4 text-base" data-kid="2-1-10-2-1-3-1" data-name="browse services button" href="#">
-                        Ver todos los servicios
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
+<div id="preloader" role="status" aria-label="Cargando Semper Fi">
+  <div class="flex flex-col items-center gap-6">
+    <img data-pre-logo src="/img/preloader-logo.webp" width="120" height="120" alt="" class="h-[120px] w-[120px] rounded-[28px] shadow-semperfi-lg" />
+    <span class="block h-[3px] w-40 overflow-hidden rounded-full bg-white/10"><span data-pre-bar class="block h-full w-full origin-left bg-semperfi" style="transform:scaleX(0)"></span></span>
+    <button type="button" data-skip class="rounded-full px-4 py-2 text-sm text-white/70 underline-offset-4 hover:text-white hover:underline">Saltar intro</button>
+  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js">
-</script>
-<script type="module">
-    import Lenis from "https://esm.sh/lenis@1"
-  
-  gsap.registerPlugin(ScrollTrigger);
+<a href="#main" class="skip-link">Saltar al contenido</a>
+<app-header></app-header>
 
-  // Smooth Scroll
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-    orientation: 'vertical',
-    gestureOrientation: 'vertical',
-    wheelMultiplier: 1,
-    smoothTouch: false,
-    touchMultiplier: 2,
-    infinite: false,
-  })
+<main id="main">
+  <!-- HERO -->
+  <section id="inicio" aria-labelledby="hero-title" class="relative isolate overflow-hidden bg-semperfi-900 pb-16 pt-28 text-white sm:pt-32 lg:min-h-[100svh] lg:pb-10">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+      <div class="glow left-[55%] top-[5%] h-[520px] w-[520px]"></div>
+      <div class="glow -left-40 bottom-0 h-[380px] w-[380px] opacity-30"></div>
+      <div data-network class="absolute inset-0"><svg aria-hidden="true" class="absolute inset-0 h-full w-full opacity-60" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" fill="none"><g stroke="#2ebaf8" stroke-opacity=".18"><path d="M80 120 220 210 380 140 520 260 700 170M140 420 300 330 460 430 640 360 760 470M220 210 300 330M380 140 460 430M520 260 640 360M80 120 140 420M700 170 760 470"/></g><g fill="#5dcbfb"><circle cx="80" cy="120" r="3"/><circle cx="220" cy="210" r="3.5"/><circle cx="380" cy="140" r="2.5"/><circle cx="520" cy="260" r="4"/><circle cx="700" cy="170" r="3"/><circle cx="140" cy="420" r="2.5"/><circle cx="300" cy="330" r="3.5"/><circle cx="460" cy="430" r="3"/><circle cx="640" cy="360" r="3.5"/><circle cx="760" cy="470" r="2.5"/></g></svg></div>
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-semperfi-900 to-transparent"></div>
+    </div>
+    <div class="container-x grid items-center gap-12 lg:grid-cols-[1.05fr_1fr]">
+      <div>
+        <p data-hero-fade class="eyebrow text-semperfi-300">Hecho en Popayán · Siempre fiel</p>
+        <h1 id="hero-title" data-hero-title class="t-1 mt-6 max-w-[14ch] text-white">El ecosistema digital que impulsa el comercio en <span class="text-semperfi-400">Popayán</span></h1>
+        <p data-hero-fade class="lead mt-6 max-w-xl text-white/75">Semper Fi integra domicilios, gestión empresarial y servicios en una sola plataforma. Conectamos clientes, comercios y trabajadores para construir un futuro digital más eficiente y justo.</p>
+        <div data-hero-fade class="mt-9 flex flex-wrap gap-3">
+          <a href="#descargar" class="btn btn-primary" data-magnetic>Descargar la app <span aria-hidden="true">→</span></a>
+          <a href="/software.html" class="btn btn-ghost">Soy comercio</a>
+        </div>
+        <ul data-hero-fade class="mt-10 flex flex-wrap gap-2" aria-label="Lo que encuentras en Semper Fi">
+          <li class="chip">Domicilios</li><li class="chip">Servicios</li><li class="chip">Reservas</li><li class="chip">Stock con IA</li>
+        </ul>
+      </div>
+      <div class="relative mx-auto w-full max-w-[560px]">
+        <div data-hero-phone class="hero-mask relative">
+          <picture class=""><source type="image/avif" srcset="/img/hero-phone-420.avif 420w, /img/hero-phone-696.avif 696w" sizes="(min-width: 1024px) 560px, 88vw"/><source type="image/webp" srcset="/img/hero-phone-420.webp 420w, /img/hero-phone-696.webp 696w" sizes="(min-width: 1024px) 560px, 88vw"/><img src="/img/hero-phone-696.webp" width="696" height="740" alt="App Semper Fi: tu intermediario esencial, con comida a domicilio, hoteles, mecánicos, belleza, peluquería y compras" class="h-auto w-full" loading="eager" decoding="async" fetchpriority="high"/></picture>
+        </div>
+        <div data-float class="absolute left-[2%] top-[18%] w-[22%] hidden rounded-[1.4rem] border border-white/15 bg-semperfi-900/60 p-2 shadow-semperfi backdrop-blur-md sm:block" style="animation: floaty 5s ease-in-out 0.0s infinite"><picture class=""><source type="image/avif" srcset="/img/cat-2-160.avif 160w" sizes="120px"/><source type="image/webp" srcset="/img/cat-2-160.webp 160w" sizes="120px"/><img src="/img/cat-2-160.webp" width="160" height="160" alt="" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="sr-only">Comida a domicilio</span></div>
+<div data-float class="absolute right-[0%] top-[8%] w-[20%] hidden rounded-[1.4rem] border border-white/15 bg-semperfi-900/60 p-2 shadow-semperfi backdrop-blur-md sm:block" style="animation: floaty 6s ease-in-out 0.6s infinite"><picture class=""><source type="image/avif" srcset="/img/cat-8-160.avif 160w" sizes="120px"/><source type="image/webp" srcset="/img/cat-8-160.webp 160w" sizes="120px"/><img src="/img/cat-8-160.webp" width="160" height="160" alt="" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="sr-only">Hoteles y reservas</span></div>
+<div data-float class="absolute right-[-3%] top-[52%] w-[19%] hidden rounded-[1.4rem] border border-white/15 bg-semperfi-900/60 p-2 shadow-semperfi backdrop-blur-md sm:block" style="animation: floaty 7s ease-in-out 1.2s infinite"><picture class=""><source type="image/avif" srcset="/img/cat-6-160.avif 160w" sizes="120px"/><source type="image/webp" srcset="/img/cat-6-160.webp 160w" sizes="120px"/><img src="/img/cat-6-160.webp" width="160" height="160" alt="" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="sr-only">Belleza a domicilio</span></div>
+<div data-float class="absolute left-[-2%] bottom-[16%] w-[20%] hidden rounded-[1.4rem] border border-white/15 bg-semperfi-900/60 p-2 shadow-semperfi backdrop-blur-md sm:block" style="animation: floaty 8s ease-in-out 1.7999999999999998s infinite"><picture class=""><source type="image/avif" srcset="/img/cat-4-160.avif 160w" sizes="120px"/><source type="image/webp" srcset="/img/cat-4-160.webp 160w" sizes="120px"/><img src="/img/cat-4-160.webp" width="160" height="160" alt="" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="sr-only">Compras y más</span></div>
+      </div>
+    </div>
+  </section>
 
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
+  <!-- CATEGORÍAS (Rappi-like) -->
+  <section aria-labelledby="cat-title" class="bg-semperfi-900 pb-16 text-white">
+    <div class="container-x">
+      <div class="panel p-5 sm:p-8">
+        <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <h2 id="cat-title" class="t-3 text-white">¿Qué necesitas hoy?</h2>
+          <a href="/servicios.html" class="text-sm font-semibold text-semperfi-400 hover:text-white">Ver todos los servicios <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="grid grid-cols-4 gap-2 sm:gap-4 lg:grid-cols-8"><li><a href="/domicilios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-2-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-2-160.webp 160w" sizes="96px"/><img src="/img/cat-2-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Comida</span></a></li>
+<li><a href="/domicilios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-4-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-4-160.webp 160w" sizes="96px"/><img src="/img/cat-4-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Mercado</span></a></li>
+<li><a href="/domicilios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-3-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-3-160.webp 160w" sizes="96px"/><img src="/img/cat-3-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Farmacia</span></a></li>
+<li><a href="/domicilios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-5-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-5-160.webp 160w" sizes="96px"/><img src="/img/cat-5-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Mascotas</span></a></li>
+<li><a href="/servicios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-6-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-6-160.webp 160w" sizes="96px"/><img src="/img/cat-6-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Belleza</span></a></li>
+<li><a href="/servicios.html" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-7-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-7-160.webp 160w" sizes="96px"/><img src="/img/cat-7-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Tecnología</span></a></li>
+<li><a href="#celulas" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-8-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-8-160.webp 160w" sizes="96px"/><img src="/img/cat-8-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Hoteles</span></a></li>
+<li><a href="#celulas" class="group flex flex-col items-center gap-2 rounded-3xl p-2 text-center transition-colors hover:bg-white/5">
+  <span class="grid aspect-square w-full max-w-[96px] place-items-center rounded-[1.6rem] border border-white/10 bg-white/[.04] p-2 transition-transform duration-300 group-hover:-translate-y-1"><picture class=""><source type="image/avif" srcset="/img/cat-9-160.avif 160w" sizes="96px"/><source type="image/webp" srcset="/img/cat-9-160.webp 160w" sizes="96px"/><img src="/img/cat-9-160.webp" width="160" height="160" alt="" class="h-full w-full object-contain" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  <span class="text-sm font-medium text-white/85">Moteles</span></a></li></ul>
+      </div>
+    </div>
+  </section>
 
-  lenis.on('scroll', ScrollTrigger.update)
+  <!-- MARQUEE -->
+  <section aria-label="Para todo tipo de negocio en Popayán" class="border-y border-black/5 bg-cream py-7">
+    <div class="marquee overflow-hidden">
+      <ul class="marquee-track"><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Restaurantes<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Cafeterías<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Mecánicos<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Peluquerías<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Cerrajeros<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Hoteles<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Moteles<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Tiendas de barrio<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Farmacias<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Repartidores<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Belleza<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Mascotas<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Restaurantes<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Cafeterías<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Mecánicos<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Peluquerías<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Cerrajeros<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Hoteles<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Moteles<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Tiendas de barrio<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Farmacias<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Repartidores<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Belleza<span aria-hidden="true" class="text-semperfi-600">✦</span></li><li aria-hidden="true" class="flex items-center gap-4 whitespace-nowrap font-display text-xl font-medium text-ink sm:text-2xl">Mascotas<span aria-hidden="true" class="text-semperfi-600">✦</span></li></ul>
+    </div>
+  </section>
 
-  // GSAP Animations
-  // Hero Entrance
-  const heroTl = gsap.timeline();
-  heroTl.from("#hero-panel", {
-    scale: 0.95,
-    borderRadius: "10rem",
-    duration: 1.5,
-    ease: "power4.out"
-  });
-  heroTl.from("#hero-img", {
-    scale: 1.2,
-    y: 50,
-    duration: 2,
-    ease: "power3.out"
-  }, 0);
+  <!-- INTRO -->
+  <section id="servicios" aria-labelledby="intro-title" class="section bg-cream">
+    <div class="container-x grid items-center gap-12 lg:grid-cols-2">
+      <div>
+        <p class="eyebrow text-muted">Nuestros servicios</p>
+        <h2 id="intro-title" data-split class="t-2 mt-5">Tres soluciones en una sola plataforma inteligente</h2>
+        <p class="lead js-reveal mt-6 text-muted">Conectamos negocios, clientes y trabajadores independientes con tecnología e inteligencia artificial para optimizar cada proceso.</p>
+        <dl class="mt-10 grid grid-cols-3 gap-4 border-t border-black/10 pt-8">
+          <div class="js-reveal"><dt class="text-sm text-muted">Células</dt><dd class="mt-1 font-display text-4xl font-semibold" data-scramble="4">4</dd></div>
+          <div class="js-reveal"><dt class="text-sm text-muted">Tipos de usuario</dt><dd class="mt-1 font-display text-4xl font-semibold" data-scramble="3">3</dd></div>
+          <div class="js-reveal"><dt class="text-sm text-muted">Monitoreo</dt><dd class="mt-1 font-display text-4xl font-semibold" data-scramble="24/7">24/7</dd></div>
+        </dl>
+      </div>
+      <div class="js-reveal relative">
+        <div class="absolute -inset-6 -z-10 rounded-[3rem] bg-gradient-semperfi opacity-15 blur-2xl"></div>
+        <div class="overflow-hidden rounded-[2rem] bg-semperfi-900 shadow-2xl"><picture class=""><source type="image/avif" srcset="/img/conectando-600.avif 600w, /img/conectando-1000.avif 1000w" sizes="(min-width:1024px) 46vw, 92vw"/><source type="image/webp" srcset="/img/conectando-600.webp 600w, /img/conectando-1000.webp 1000w" sizes="(min-width:1024px) 46vw, 92vw"/><img src="/img/conectando-1000.webp" width="1000" height="747" alt="Ilustración: el logo de Semper Fi conectando comercios, repartidores y clientes" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture></div>
+      </div>
+    </div>
+  </section>
 
-  // Reveal Lines
-  gsap.utils.toArray('.divider-line, .divider-line-dark').forEach(line => {
-    gsap.from(line, {
-      scaleX: 0,
-      duration: 1.5,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: line,
-        start: "top 90%"
-      }
-    });
-  });
+  <!-- GIANT HEADLINE -->
+  <section aria-hidden="true" class="overflow-hidden bg-cream pb-10">
+    <p data-giant class="t-giant whitespace-nowrap font-display text-ink">Popayán <span class="text-semperfi-600">conectado</span>.</p>
+  </section>
 
-  // Reveal Up elements
-  gsap.utils.toArray('.reveal-up').forEach(el => {
-    gsap.to(el, {
-      y: 0,
-      opacity: 1,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%"
-      }
-    });
-  });
+  <!-- 4 CÉLULAS -->
+  <section id="celulas" data-cells aria-labelledby="cells-title" class="relative overflow-hidden bg-night py-20 text-white lg:flex lg:h-screen lg:flex-col lg:justify-center lg:py-0">
+    <div aria-hidden="true" class="glow right-0 top-0 h-[420px] w-[420px] opacity-30"></div>
+    <div class="container-x mb-10 flex flex-wrap items-end justify-between gap-6 lg:mb-12">
+      <div>
+        <p class="eyebrow text-semperfi-300">Nuestras células</p>
+        <h2 id="cells-title" data-split class="t-2 mt-5 max-w-[18ch]">Cuatro células conectadas en un solo ecosistema</h2>
+      </div>
+      <div class="hidden w-56 lg:block" aria-hidden="true"><span class="block h-[3px] overflow-hidden rounded-full bg-white/10"><span data-cells-progress class="block h-full origin-left bg-semperfi" style="transform:scaleX(0)"></span></span></div>
+    </div>
+    <ol data-cells-track class="container-x grid gap-5 sm:grid-cols-2 lg:flex lg:w-max lg:max-w-none lg:gap-6 lg:pl-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))]"><li data-cell class="panel flex min-h-[420px] flex-col p-7 sm:p-9 lg:h-[min(68vh,560px)] lg:w-[min(44vw,560px)] lg:flex-none">
+  <div class="flex items-start justify-between gap-4">
+    <span class="font-mono text-sm text-semperfi-400">01 / 04</span>
+    <span data-cell-icon class="block w-24 sm:w-28"><picture class=""><source type="image/avif" srcset="/img/cat-2-160.avif 160w, /img/cat-2-320.avif 320w" sizes="112px"/><source type="image/webp" srcset="/img/cat-2-160.webp 160w, /img/cat-2-320.webp 320w" sizes="112px"/><img src="/img/cat-2-320.webp" width="320" height="320" alt="" class="h-auto w-full drop-shadow-[0_20px_30px_rgba(46,186,248,.35)]" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  </div>
+  <h3 class="t-2 mt-auto text-white">Domicilios</h3>
+  <p class="mt-4 max-w-md text-base leading-relaxed text-white/75">Conecta clientes con comercios afiliados. Gestión logística inteligente que optimiza tiempos de entrega y reduce costos sin necesidad de infraestructura propia.</p>
+  <div class="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+    <span class="chip"><span class="h-1.5 w-1.5 rounded-full bg-[#22c55e]"></span>Logística optimizada</span>
+    <a href="/domicilios.html" class="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-semperfi-400 hover:text-white">Ver Domicilios<span aria-hidden="true">→</span></a>
+  </div>
+</li>
+<li data-cell class="panel flex min-h-[420px] flex-col p-7 sm:p-9 lg:h-[min(68vh,560px)] lg:w-[min(44vw,560px)] lg:flex-none">
+  <div class="flex items-start justify-between gap-4">
+    <span class="font-mono text-sm text-semperfi-400">02 / 04</span>
+    <span data-cell-icon class="block w-24 sm:w-28"><picture class=""><source type="image/avif" srcset="/img/cat-6-160.avif 160w, /img/cat-6-320.avif 320w" sizes="112px"/><source type="image/webp" srcset="/img/cat-6-160.webp 160w, /img/cat-6-320.webp 320w" sizes="112px"/><img src="/img/cat-6-320.webp" width="320" height="320" alt="" class="h-auto w-full drop-shadow-[0_20px_30px_rgba(46,186,248,.35)]" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  </div>
+  <h3 class="t-2 mt-auto text-white">Servicios</h3>
+  <p class="mt-4 max-w-md text-base leading-relaxed text-white/75">Trabajadores independientes (mecánicos, peluqueros, cerrajeros) ofrecen sus servicios directamente. Conecta oferta y demanda de manera rápida y organizada.</p>
+  <div class="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+    <span class="chip"><span class="h-1.5 w-1.5 rounded-full bg-[#22c55e]"></span>Conexión directa</span>
+    <a href="/servicios.html" class="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-semperfi-400 hover:text-white">Ver Servicios<span aria-hidden="true">→</span></a>
+  </div>
+</li>
+<li data-cell class="panel flex min-h-[420px] flex-col p-7 sm:p-9 lg:h-[min(68vh,560px)] lg:w-[min(44vw,560px)] lg:flex-none">
+  <div class="flex items-start justify-between gap-4">
+    <span class="font-mono text-sm text-semperfi-400">03 / 04</span>
+    <span data-cell-icon class="block w-24 sm:w-28"><picture class=""><source type="image/avif" srcset="/img/cat-8-160.avif 160w, /img/cat-8-320.avif 320w" sizes="112px"/><source type="image/webp" srcset="/img/cat-8-160.webp 160w, /img/cat-8-320.webp 320w" sizes="112px"/><img src="/img/cat-8-320.webp" width="320" height="320" alt="" class="h-auto w-full drop-shadow-[0_20px_30px_rgba(46,186,248,.35)]" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  </div>
+  <h3 class="t-2 mt-auto text-white">Reservas</h3>
+  <p class="mt-4 max-w-md text-base leading-relaxed text-white/75">Sistema de reservas para moteles, hoteles y restaurantes. Gestiona disponibilidad, confirmaciones y pagos desde una plataforma centralizada.</p>
+  <div class="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+    <span class="chip"><span class="h-1.5 w-1.5 rounded-full bg-[#22c55e]"></span>Gestión centralizada</span>
+    <a href="#descargar" class="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-semperfi-400 hover:text-white">Reservar desde la app<span aria-hidden="true">→</span></a>
+  </div>
+</li>
+<li data-cell class="panel flex min-h-[420px] flex-col p-7 sm:p-9 lg:h-[min(68vh,560px)] lg:w-[min(44vw,560px)] lg:flex-none">
+  <div class="flex items-start justify-between gap-4">
+    <span class="font-mono text-sm text-semperfi-400">04 / 04</span>
+    <span data-cell-icon class="block w-24 sm:w-28"><picture class=""><source type="image/avif" srcset="/img/cat-7-160.avif 160w, /img/cat-7-320.avif 320w" sizes="112px"/><source type="image/webp" srcset="/img/cat-7-160.webp 160w, /img/cat-7-320.webp 320w" sizes="112px"/><img src="/img/cat-7-320.webp" width="320" height="320" alt="" class="h-auto w-full drop-shadow-[0_20px_30px_rgba(46,186,248,.35)]" loading="lazy" decoding="async" fetchpriority="low"/></picture></span>
+  </div>
+  <h3 class="t-2 mt-auto text-white">Stock (Inventario)</h3>
+  <p class="mt-4 max-w-md text-base leading-relaxed text-white/75">Control total de inventarios, costos reales por producto, ventas, gastos y rentabilidad. Claridad financiera con IA para tomar decisiones eficientes.</p>
+  <div class="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
+    <span class="chip"><span class="h-1.5 w-1.5 rounded-full bg-[#22c55e]"></span>Control financiero</span>
+    <a href="/software.html" class="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-semperfi-400 hover:text-white">Ver Software<span aria-hidden="true">→</span></a>
+  </div>
+</li></ol>
+  </section>
 
-  // Header Color Switching
-  const sections = gsap.utils.toArray('section');
-  sections.forEach(section => {
-    // Detectar secciones oscuras: hero, secciones con bg-[#080808] o bg-[#0a1628]
-    const isDark = section.id === 'hero-section' || 
-                   section.classList.contains('bg-[#080808]') ||
-                   section.classList.contains('bg-[#0a1628]') ||
-                   section.style.backgroundColor === 'rgb(8, 8, 8)' ||
-                   section.style.backgroundColor === 'rgb(10, 22, 40)';
-    
-    ScrollTrigger.create({
-      trigger: section,
-      start: "top 100px",
-      end: "bottom 100px",
-      onEnter: () => updateHeader(isDark),
-      onEnterBack: () => updateHeader(isDark),
-      onLeave: () => {
-        // Al salir de la sección, verificar la siguiente
-        const nextSection = section.nextElementSibling;
-        if (nextSection && nextSection.tagName === 'SECTION') {
-          const isNextDark = nextSection.id === 'hero-section' || 
-                            nextSection.classList.contains('bg-[#080808]') ||
-                            nextSection.classList.contains('bg-[#0a1628]');
-          updateHeader(isNextDark);
-        }
-      }
-    });
-  });
+  <!-- PARA COMERCIOS: DASHBOARD -->
+  <section id="comercios" aria-labelledby="biz-title" class="section relative overflow-hidden bg-semperfi-900 text-white">
+    <div aria-hidden="true" class="glow -left-32 top-1/3 h-[480px] w-[480px] opacity-35"></div>
+    <div class="container-x grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+      <div>
+        <p class="eyebrow text-semperfi-300">Para comercios y negocios locales</p>
+        <h2 id="biz-title" data-split class="t-2 mt-5">Control total sobre tu negocio con inteligencia artificial</h2>
+        <p class="lead js-reveal mt-6 text-white/75">Semper Fi Software te ayuda a controlar inventarios, calcular costos reales, analizar rentabilidad y tomar decisiones más inteligentes en tiempo real.</p>
+        <ul class="mt-10 space-y-6">
+          <li class="js-reveal flex gap-5"><span class="font-mono text-sm text-semperfi-400" data-scramble="01">01</span><div><h3 class="text-lg font-semibold">Conecta con más clientes desde tu negocio</h3><p class="mt-1.5 text-white/70">Recibe pedidos, gestiona entregas en tiempo real y llega a más personas sin invertir en infraestructura propia.</p></div></li>
+          <li class="js-reveal flex gap-5"><span class="font-mono text-sm text-semperfi-400" data-scramble="02">02</span><div><h3 class="text-lg font-semibold">Decisiones inteligentes con datos en tiempo real</h3><p class="mt-1.5 text-white/70">Monitorea inventarios, ventas, costos y rentabilidad. Con IA integrada sabrás cuánto ganas por producto y qué decisiones tomar para crecer.</p></div></li>
+        </ul>
+        <div class="js-reveal mt-10 flex flex-wrap gap-3"><a href="/software.html" class="btn btn-primary" data-magnetic>Conocer Semper Fi Software</a><a href="mailto:info@semperfi.app?subject=Quiero%20Semper%20Fi%20para%20mi%20negocio" class="btn btn-ghost">Hablar con el equipo</a></div>
+      </div>
 
-  function updateHeader(isDark) {
-    const header = document.querySelector('#main-nav');
-    if (!header) return;
-    
-    if (isDark) {
-      header.classList.remove('is-light');
-    } else {
-      header.classList.add('is-light');
-    }
-  }
+      <figure data-dashboard class="panel js-reveal p-4 sm:p-6" aria-label="Ejemplo ilustrativo del panel de Semper Fi Software para un restaurante">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-4">
+          <div class="flex items-center gap-3"><span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-semperfi font-display text-sm font-bold text-semperfi-900">DJ</span><div><p class="text-sm font-semibold">Restaurante Don Julio</p><p class="text-xs text-white/55">Últimas 4 semanas</p></div></div>
+          <span class="chip"><span class="t-2 w-2 rounded-full bg-[#22c55e]" style="animation:pulse-dot 1.6s infinite"></span>En vivo</span>
+        </div>
+        <div class="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="rounded-2xl bg-white/[.04] p-3.5"><p class="text-[11px] uppercase tracking-wider text-white/55">Ventas mes</p><p class="mt-1 font-display text-xl font-semibold sm:text-2xl">$<span data-count="14.2">14,2</span>M</p><p class="text-xs text-[#4ade80]">+15%</p></div>
+          <div class="rounded-2xl bg-white/[.04] p-3.5"><p class="text-[11px] uppercase tracking-wider text-white/55">Margen</p><p class="mt-1 font-display text-xl font-semibold sm:text-2xl"><span data-count="28.5">28,5</span>%</p><p class="text-xs text-[#4ade80]">desde 26%</p></div>
+          <div class="rounded-2xl bg-white/[.04] p-3.5"><p class="text-[11px] uppercase tracking-wider text-white/55">Pedidos</p><p class="mt-1 font-display text-xl font-semibold sm:text-2xl"><span data-count="362">362</span></p><p class="text-xs text-white/55">vía Semper Fi</p></div>
+          <div class="rounded-2xl bg-white/[.04] p-3.5"><p class="text-[11px] uppercase tracking-wider text-white/55">Entrega prom.</p><p class="mt-1 font-display text-xl font-semibold sm:text-2xl"><span data-count="28">28</span> min</p><p class="text-xs text-white/55">tiempo medio</p></div>
+        </div>
+        <div class="mt-4 grid gap-4 sm:grid-cols-[1.4fr_1fr]">
+          <div class="rounded-2xl bg-white/[.04] p-4">
+            <div class="flex items-center justify-between"><p class="text-sm font-medium">Ventas por semana</p><p class="font-mono text-[11px] text-white/55">COP</p></div>
+            <div class="relative mt-4 flex h-36 items-end gap-1.5" aria-hidden="true"><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:38%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:52%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:45%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:61%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:58%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:72%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:66%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:80%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:74%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:88%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:83%"></span><span data-bar class="block flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-semperfi-700 to-semperfi-400" style="height:95%"></span><span data-line class="absolute inset-x-0 top-[22%] block h-px bg-semperfi-300/60"></span></div>
+          </div>
+          <div class="rounded-2xl bg-white/[.04] p-4"><p class="text-sm font-medium">Inventario</p><ul class="mt-4 space-y-3.5"><li data-row class="grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1.5">
+<span class="text-sm text-white/85">Carne de res</span><span class="text-xs" style="color:#22c55e">Stock alto</span>
+<span class="col-span-2 block h-1.5 overflow-hidden rounded-full bg-white/10"><span data-bar class="block h-full origin-left rounded-full" style="width:82%;background:#22c55e"></span></span></li><li data-row class="grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1.5">
+<span class="text-sm text-white/85">Papa criolla</span><span class="text-xs" style="color:#f59e0b">Reponer pronto</span>
+<span class="col-span-2 block h-1.5 overflow-hidden rounded-full bg-white/10"><span data-bar class="block h-full origin-left rounded-full" style="width:34%;background:#f59e0b"></span></span></li><li data-row class="grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1.5">
+<span class="text-sm text-white/85">Gaseosas 400 ml</span><span class="text-xs" style="color:#2ebaf8">Stock medio</span>
+<span class="col-span-2 block h-1.5 overflow-hidden rounded-full bg-white/10"><span data-bar class="block h-full origin-left rounded-full" style="width:58%;background:#2ebaf8"></span></span></li><li data-row class="grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1.5">
+<span class="text-sm text-white/85">Pan artesanal</span><span class="text-xs" style="color:#ef4444">Crítico</span>
+<span class="col-span-2 block h-1.5 overflow-hidden rounded-full bg-white/10"><span data-bar class="block h-full origin-left rounded-full" style="width:12%;background:#ef4444"></span></span></li></ul></div>
+        </div>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl bg-white/[.04] p-4"><p class="mb-3 text-sm font-medium">Pedidos recientes</p><ul data-feed class="space-y-2"><li class="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/[.03] px-3 py-2.5"><span class="min-w-0"><span class="block text-xs text-white/55">Pedido #1042</span><span class="block truncate text-sm text-white/90">Bandeja paisa ×2</span></span><span class="shrink-0 rounded-full bg-semperfi/15 px-2.5 py-1 text-[11px] font-medium text-semperfi-300">Entregado</span></li><li class="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/[.03] px-3 py-2.5"><span class="min-w-0"><span class="block text-xs text-white/55">Pedido #1043</span><span class="block truncate text-sm text-white/90">Ajiaco ×1</span></span><span class="shrink-0 rounded-full bg-semperfi/15 px-2.5 py-1 text-[11px] font-medium text-semperfi-300">En camino</span></li><li class="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/[.03] px-3 py-2.5"><span class="min-w-0"><span class="block text-xs text-white/55">Pedido #1044</span><span class="block truncate text-sm text-white/90">Tamal de pipián ×4</span></span><span class="shrink-0 rounded-full bg-semperfi/15 px-2.5 py-1 text-[11px] font-medium text-semperfi-300">Preparando</span></li><li class="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/[.03] px-3 py-2.5"><span class="min-w-0"><span class="block text-xs text-white/55">Pedido #1045</span><span class="block truncate text-sm text-white/90">Café de Popayán ×3</span></span><span class="shrink-0 rounded-full bg-semperfi/15 px-2.5 py-1 text-[11px] font-medium text-semperfi-300">Nuevo</span></li></ul></div>
+          <div class="rounded-2xl border border-semperfi/30 bg-semperfi/10 p-4">
+            <p class="flex items-center gap-2 text-sm font-medium text-semperfi-300"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.6L19.5 9l-5.7 1.4L12 16l-1.8-5.6L4.5 9l5.7-1.4z"/></svg>Asistente IA</p>
+            <p class="mt-3 text-sm leading-relaxed text-white/85">Las ventas aumentaron 15% respecto al mes anterior y el margen mejoró de 26% a 28,5% gracias a un mejor control de inventario. Sugerencia: reponer pan artesanal antes del fin de semana.</p>
+          </div>
+        </div>
+        <figcaption class="mt-4 text-center text-xs text-white/55">Ejemplo ilustrativo con datos de demostración.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-  // Database Background Drift
-  gsap.to("#database-bg-img", {
-    yPercent: 20,
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#database-bg-img",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true
-    }
-  });
+  <!-- PARA INDEPENDIENTES Y CLIENTES -->
+  <section id="app" aria-labelledby="app-title" class="section bg-cream">
+    <div class="container-x grid items-center gap-14 lg:grid-cols-[1fr_1.1fr]">
+      <div>
+        <p class="eyebrow text-muted">Para todos los actores del ecosistema</p>
+        <h2 id="app-title" data-split class="t-2 mt-5">Experiencia digital simple y poderosa</h2>
+        <p class="lead js-reveal mt-6 text-muted">Una interfaz diseñada para que comercios, clientes y trabajadores gestionen todo desde sus dispositivos móviles.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+          <article class="js-reveal rounded-3xl border border-black/5 bg-white p-6"><h3 class="text-lg font-semibold">Para clientes</h3><p class="mt-2 text-muted">Pide domicilios, reserva hoteles o restaurantes y encuentra servicios con tarifas justas, todo en una app.</p></article>
+          <article class="js-reveal rounded-3xl border border-black/5 bg-white p-6"><h3 class="text-lg font-semibold">Para independientes</h3><p class="mt-2 text-muted">Mecánicos, peluqueros, cerrajeros y otros oficios publican sus servicios con sus propios precios.</p><a href="/servicios.html" class="mt-4 inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-semperfi-800 hover:text-ink">Ofrece tus servicios <span aria-hidden="true">→</span></a></article>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 sm:gap-6"><figure class="js-reveal "><div class="overflow-hidden rounded-[2rem] border-[6px] border-semperfi-900 bg-semperfi-900 shadow-2xl"><picture class=""><source type="image/avif" srcset="/img/app-inicio-300.avif 300w, /img/app-inicio-540.avif 540w" sizes="(min-width:1024px) 240px, 45vw"/><source type="image/webp" srcset="/img/app-inicio-300.webp 300w, /img/app-inicio-540.webp 540w" sizes="(min-width:1024px) 240px, 45vw"/><img src="/img/app-inicio-540.webp" width="540" height="1200" alt="Pantalla principal de la app Semper Fi" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture></div><figcaption class="mt-3 text-center text-sm text-muted">Pantalla principal</figcaption></figure>
+<figure class="js-reveal lg:translate-y-12"><div class="overflow-hidden rounded-[2rem] border-[6px] border-semperfi-900 bg-semperfi-900 shadow-2xl"><picture class=""><source type="image/avif" srcset="/img/app-perfiles-300.avif 300w, /img/app-perfiles-540.avif 540w" sizes="(min-width:1024px) 240px, 45vw"/><source type="image/webp" srcset="/img/app-perfiles-300.webp 300w, /img/app-perfiles-540.webp 540w" sizes="(min-width:1024px) 240px, 45vw"/><img src="/img/app-perfiles-540.webp" width="540" height="1200" alt="Perfiles de usuario en la app" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture></div><figcaption class="mt-3 text-center text-sm text-muted">Perfiles de usuario</figcaption></figure>
+<figure class="js-reveal "><div class="overflow-hidden rounded-[2rem] border-[6px] border-semperfi-900 bg-semperfi-900 shadow-2xl"><picture class=""><source type="image/avif" srcset="/img/app-reservas-300.avif 300w, /img/app-reservas-540.avif 540w" sizes="(min-width:1024px) 240px, 45vw"/><source type="image/webp" srcset="/img/app-reservas-300.webp 300w, /img/app-reservas-540.webp 540w" sizes="(min-width:1024px) 240px, 45vw"/><img src="/img/app-reservas-540.webp" width="540" height="1200" alt="Sistema de reservas en la app" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture></div><figcaption class="mt-3 text-center text-sm text-muted">Sistema de reservas</figcaption></figure>
+<figure class="js-reveal lg:translate-y-12"><div class="overflow-hidden rounded-[2rem] border-[6px] border-semperfi-900 bg-semperfi-900 shadow-2xl"><picture class=""><source type="image/avif" srcset="/img/app-comida1-300.avif 300w, /img/app-comida1-540.avif 540w" sizes="(min-width:1024px) 240px, 45vw"/><source type="image/webp" srcset="/img/app-comida1-300.webp 300w, /img/app-comida1-540.webp 540w" sizes="(min-width:1024px) 240px, 45vw"/><img src="/img/app-comida1-540.webp" width="540" height="1200" alt="Menú digital de comida en la app" class="h-auto w-full" loading="lazy" decoding="async" fetchpriority="low"/></picture></div><figcaption class="mt-3 text-center text-sm text-muted">Menú digital de comida</figcaption></figure></div>
+    </div>
+  </section>
 
-  // Pinning for Feature Rows - DISABLED FOR BETTER UX
-  // Removed the pinning effect that was causing strange movement
-  gsap.utils.toArray('.feature-row-pinned').forEach((row, i) => {
-    gsap.from(row, {
-      opacity: 0,
-      y: 60,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: row,
-        start: "top 80%"
-      }
-    });
-  });
+  <!-- SERVICIOS -->
+  <section aria-labelledby="svc-title" class="section bg-white">
+    <div class="container-x">
+      <div class="mb-12 flex flex-wrap items-end justify-between gap-6">
+        <div><p class="eyebrow text-muted">Servicios disponibles</p><h2 id="svc-title" data-split class="t-2 mt-5 max-w-[20ch]">Trabajadores y profesionales listos para ayudarte</h2></div>
+        <a href="/servicios.html" class="btn btn-dark">Ver todos los servicios <span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="grid auto-rows-[220px] gap-4 sm:grid-cols-2 lg:grid-cols-3"><li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 sm:row-span-2"><picture class=""><source type="image/avif" srcset="/img/service-2-480.avif 383w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-2-480.webp 383w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-2-480.webp" width="383" height="473" alt="Servicio de mecánica disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Mecánica</span></li>
+<li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 "><picture class=""><source type="image/avif" srcset="/img/service-3-480.avif 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-3-480.webp 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-3-480.webp" width="480" height="264" alt="Servicio de peluquería disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Peluquería</span></li>
+<li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 "><picture class=""><source type="image/avif" srcset="/img/service-4-480.avif 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-4-480.webp 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-4-480.webp" width="480" height="274" alt="Servicio de reparaciones técnicas disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Reparaciones técnicas</span></li>
+<li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 sm:row-span-2"><picture class=""><source type="image/avif" srcset="/img/service-5-480.avif 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-5-480.webp 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-5-480.webp" width="480" height="221" alt="Servicio de domicilios en moto disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Domicilios en moto</span></li>
+<li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 "><picture class=""><source type="image/avif" srcset="/img/service-6-480.avif 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-6-480.webp 480w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-6-480.webp" width="480" height="241" alt="Servicio de entregas disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Entregas</span></li>
+<li class="js-reveal group relative overflow-hidden rounded-3xl bg-semperfi-900 "><picture class=""><source type="image/avif" srcset="/img/service-1-480.avif 450w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><source type="image/webp" srcset="/img/service-1-480.webp 450w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw"/><img src="/img/service-1-480.webp" width="450" height="603" alt="Servicio de pedidos desde la app disponible en Semper Fi" class="h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" fetchpriority="low"/></picture><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-semperfi-900/90 to-transparent p-5 pt-12 text-base font-semibold text-white">Pedidos desde la app</span></li></ul>
+    </div>
+  </section>
 
-  // Prefers Reduced Motion
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    gsap.globalTimeline.clear();
-    document.querySelectorAll('.reveal-up').forEach(el => gsap.set(el, {y:0, opacity:1}));
-    ScrollTrigger.getAll().forEach(t => t.kill());
-  }
-</script>
+  <!-- CÓMO FUNCIONA + FAQ -->
+  <section id="faq" aria-labelledby="how-title" class="section bg-cream">
+    <div class="container-x grid gap-16 lg:grid-cols-2">
+      <div>
+        <p class="eyebrow text-muted">Cómo funciona</p>
+        <h2 id="how-title" data-split class="t-2 mt-5">Tres pasos para empezar</h2>
+        <ol class="mt-10 space-y-5">
+          <li class="js-reveal flex gap-5 rounded-3xl bg-white p-6"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-semperfi-900 font-display font-semibold text-white">1</span><div><h3 class="font-semibold">Crea tu cuenta</h3><p class="mt-1 text-muted">Como cliente, comercio o trabajador independiente.</p></div></li>
+          <li class="js-reveal flex gap-5 rounded-3xl bg-white p-6"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-semperfi-900 font-display font-semibold text-white">2</span><div><h3 class="font-semibold">Elige tu célula</h3><p class="mt-1 text-muted">Domicilios, Servicios, Reservas o Stock según lo que necesites.</p></div></li>
+          <li class="js-reveal flex gap-5 rounded-3xl bg-white p-6"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-semperfi-900 font-display font-semibold text-white">3</span><div><h3 class="font-semibold">Conecta y crece</h3><p class="mt-1 text-muted">Pedidos, entregas, reservas y datos en tiempo real desde tu celular.</p></div></li>
+        </ol>
+      </div>
+      <div>
+        <p class="eyebrow text-muted">Preguntas frecuentes</p>
+        <h2 class="t-2 mt-5">Resolvemos tus dudas</h2>
+        <div class="mt-8"><details class="faq group border-b border-black/10 py-2" open><summary class="flex min-h-[56px] items-center justify-between gap-6 py-3 text-left font-display text-lg font-medium sm:text-xl">¿Qué es Semper Fi?<span aria-hidden="true" class="faq-icon grid h-9 w-9 shrink-0 place-items-center rounded-full border border-black/15 text-xl">+</span></summary><p class="max-w-2xl pb-5 text-base leading-relaxed text-muted">Un ecosistema digital hecho en Popayán que integra domicilios, servicios de trabajadores independientes, reservas y gestión de inventario con inteligencia artificial en una sola plataforma.</p></details>
+<details class="faq group border-b border-black/10 py-2" ><summary class="flex min-h-[56px] items-center justify-between gap-6 py-3 text-left font-display text-lg font-medium sm:text-xl">Tengo un negocio, ¿cómo me ayuda?<span aria-hidden="true" class="faq-icon grid h-9 w-9 shrink-0 place-items-center rounded-full border border-black/15 text-xl">+</span></summary><p class="max-w-2xl pb-5 text-base leading-relaxed text-muted">Puedes recibir pedidos, gestionar entregas en tiempo real y llegar a más clientes sin infraestructura propia. Con Semper Fi Software controlas inventarios, costos reales y rentabilidad por producto.</p></details>
+<details class="faq group border-b border-black/10 py-2" ><summary class="flex min-h-[56px] items-center justify-between gap-6 py-3 text-left font-display text-lg font-medium sm:text-xl">Soy independiente, ¿puedo ofrecer mis servicios?<span aria-hidden="true" class="faq-icon grid h-9 w-9 shrink-0 place-items-center rounded-full border border-black/15 text-xl">+</span></summary><p class="max-w-2xl pb-5 text-base leading-relaxed text-muted">Sí. Mecánicos, peluqueros, cerrajeros y otros oficios pueden publicar sus servicios con sus propios precios y conectar directamente con clientes de la ciudad.</p></details>
+<details class="faq group border-b border-black/10 py-2" ><summary class="flex min-h-[56px] items-center justify-between gap-6 py-3 text-left font-display text-lg font-medium sm:text-xl">¿En qué dispositivos funciona la app?<span aria-hidden="true" class="faq-icon grid h-9 w-9 shrink-0 place-items-center rounded-full border border-black/15 text-xl">+</span></summary><p class="max-w-2xl pb-5 text-base leading-relaxed text-muted">Semper Fi está pensada para Android e iOS. Escríbenos y te avisamos en cuanto puedas descargarla.</p></details></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="descargar" aria-labelledby="cta-title" class="relative overflow-hidden bg-semperfi-900 py-20 text-white sm:py-28">
+    <div class="container-x">
+      <div class="relative overflow-hidden rounded-[2.5rem] bg-gradient-semperfi p-8 shadow-semperfi-lg sm:p-14">
+        <div aria-hidden="true" class="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/20 blur-3xl"></div>
+        <div class="relative grid items-center gap-10 lg:grid-cols-[1.3fr_1fr]">
+          <div>
+            <p class="eyebrow text-semperfi-900 before:bg-semperfi-900 before:shadow-none">Disponible en Android e iOS</p>
+            <h2 id="cta-title" class="t-1 mt-5 text-semperfi-900">Únete a Semper Fi</h2>
+            <p class="lead mt-5 max-w-lg text-semperfi-900/85">Recibe pedidos, gestiona entregas y ofrece tus servicios. Todo integrado con control en tiempo real y tarifas justas.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="mailto:info@semperfi.app?subject=Quiero%20descargar%20la%20app%20Semper%20Fi" class="btn btn-dark" data-magnetic>
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+                Quiero la app</a>
+              <a href="mailto:info@semperfi.app?subject=Quiero%20afiliar%20mi%20negocio%20a%20Semper%20Fi" class="btn border border-semperfi-900/25 bg-white/30 text-semperfi-900 hover:bg-white/50">Afiliar mi negocio</a>
+            </div>
+          </div>
+          <div class="mx-auto w-full max-w-[260px]">
+            <div class="overflow-hidden rounded-[2.2rem] border-[6px] border-semperfi-900 bg-semperfi-900 shadow-2xl" style="aspect-ratio:9/16">
+              <video data-brand-video data-src="/Assets/Pantalla_de_Carga_SEMPER_FI.mp4" poster="/img/preloader-logo.webp" class="h-full w-full object-cover" muted loop playsinline preload="none" aria-label="Animación de carga de la marca Semper Fi"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <app-footer></app-footer>
-
 </body>
 </html>
