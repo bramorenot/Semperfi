@@ -1,82 +1,57 @@
-/**
- * AppFooter - Web Component para el footer del sitio
- * Componente reutilizable con información de la empresa, enlaces y secciones
- */
+/** <app-footer> — footer semántico con páginas, contacto y legal. */
 class AppFooter extends HTMLElement {
   connectedCallback() {
-    this.render();
-  }
-
-  render() {
+    const year = new Date().getFullYear();
     this.innerHTML = `
-      <footer class="w-full bg-[#f9f8f6] py-12 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-10 border-t border-black/5">
-        <div class="max-w-7xl mx-auto">
-          <div class="flex flex-col lg:flex-row justify-between gap-12 sm:gap-16 lg:gap-24">
-            <!-- Logo y copyright -->
-            <div class="lg:max-w-sm">
-              <div class="flex items-center gap-3 mb-6 sm:mb-8 lg:mb-12">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                  <img src="/Assets/1_1_Logo_Semper_Fi_Con_Fondo_Degradado.png" 
-                       alt="Semper Fi Logo" 
-                       class="w-full h-full object-cover" />
-                </div>
-                <span class="text-2xl sm:text-3xl font-semibold tracking-tight">Semper Fi</span>
-              </div>
-              <p class="text-[#70706f] text-sm sm:text-base leading-relaxed">
-                © 2026 Semper Fi. Popayán, Cauca, Colombia.
-                <br/>
-                Org.nr: 5595734681
-              </p>
-            </div>
-            
-            <!-- Enlaces del footer -->
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 lg:gap-16 flex-1">
-              <!-- Producto -->
-              <div>
-                <h5 class="text-[10px] sm:text-[11px] font-mono text-gray-400 mb-4 sm:mb-6 lg:mb-8 uppercase tracking-widest">Producto</h5>
-                <ul class="space-y-3 sm:space-y-4">
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">Precios</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="/domicilios.html">Domicilios</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="/software.html">Software</a></li>
-                </ul>
-              </div>
-              
-              <!-- Compañía -->
-              <div>
-                <h5 class="text-[10px] sm:text-[11px] font-mono text-gray-400 mb-4 sm:mb-6 lg:mb-8 uppercase tracking-widest">Compañía</h5>
-                <ul class="space-y-3 sm:space-y-4">
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="/sobre-nosotros.html">Sobre nosotros</a></li>
-                </ul>
-              </div>
-              
-              <!-- Contacto -->
-              <div>
-                <h5 class="text-[10px] sm:text-[11px] font-mono text-gray-400 mb-4 sm:mb-6 lg:mb-8 uppercase tracking-widest">Contacto</h5>
-                <ul class="space-y-3 sm:space-y-4">
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors break-words block" href="mailto:info@semperfi.app">info@semperfi.app</a></li>
-                </ul>
-              </div>
-              
-              <!-- Legal -->
-              <div class="col-span-2 sm:col-span-2 md:col-span-1">
-                <h5 class="text-[10px] sm:text-[11px] font-mono text-gray-400 mb-4 sm:mb-6 lg:mb-8 uppercase tracking-widest">Legal</h5>
-                <ul class="space-y-3 sm:space-y-4">
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">Términos y condiciones</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">Acuerdo de aliados</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">Política de privacidad</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">DPA</a></li>
-                  <li><a class="font-serif text-base sm:text-lg lg:text-xl hover:text-gray-500 transition-colors block" href="#">Política de cookies</a></li>
-                </ul>
-              </div>
+      <footer class="relative overflow-hidden bg-night text-white">
+        <div class="container-x grid gap-12 py-16 sm:py-20 lg:grid-cols-[1.2fr_2fr]">
+          <div>
+            <a href="/" class="inline-flex items-center gap-3" aria-label="Semper Fi, ir al inicio">
+              <picture>
+                <source srcset="/img/logo-96.avif" type="image/avif" />
+                <img src="/img/logo-96.webp" width="44" height="44" alt="" class="h-11 w-11" loading="lazy" decoding="async" />
+              </picture>
+              <span class="font-display text-2xl font-semibold">Semper Fi</span>
+            </a>
+            <p class="mt-3 font-mono text-xs uppercase tracking-[0.25em] text-semperfi-400">Siempre fiel</p>
+            <p class="mt-6 max-w-xs text-sm leading-relaxed text-white/65">Ecosistema digital inteligente hecho en Popayán, Cauca, Colombia.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-10 sm:grid-cols-3">
+            <nav aria-label="Producto">
+              <h2 class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/55">Producto</h2>
+              <ul class="space-y-3 text-[15px]">
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/domicilios.html">Domicilios</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/servicios.html">Servicios</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/software.html">Software / Stock</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/#descargar">Descargar app</a></li>
+              </ul>
+            </nav>
+            <nav aria-label="Compañía">
+              <h2 class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/55">Compañía</h2>
+              <ul class="space-y-3 text-[15px]">
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/#celulas">Nuestras células</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="/#faq">Preguntas frecuentes</a></li>
+              </ul>
+            </nav>
+            <div>
+              <h2 class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-white/55">Contacto</h2>
+              <ul class="space-y-3 text-[15px]">
+                <li><a class="break-words text-white/85 hover:text-semperfi-400" href="mailto:info@semperfi.app">info@semperfi.app</a></li>
+                <li><a class="text-white/85 hover:text-semperfi-400" href="mailto:info@semperfi.app?subject=Documentos%20legales%20Semper%20Fi">Términos y privacidad</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-    `;
+        <div class="border-t border-white/10">
+          <div class="container-x flex flex-col gap-2 py-6 text-xs text-white/55 sm:flex-row sm:justify-between">
+            <p>© ${year} Semper Fi. Popayán, Cauca, Colombia.</p>
+            <p>Hecho con orgullo payanés.</p>
+          </div>
+        </div>
+      </footer>`;
   }
 }
 
-// Registrar el custom element
 customElements.define('app-footer', AppFooter);
-
 export default AppFooter;
