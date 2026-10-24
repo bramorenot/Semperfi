@@ -56,24 +56,24 @@
         <app-header></app-header>
 
         <!-- Hero Section -->
-        <section class="relative w-full min-h-screen bg-gradient-to-br from-[#f9f8f6] via-[#f0efed] to-[#e8e7e5] pt-32 pb-20 px-10 flex items-center">
+        <section class="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen bg-gradient-to-br from-[#f9f8f6] via-[#f0efed] to-[#e8e7e5] pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10 flex items-center">
             <div class="max-w-7xl mx-auto w-full">
                 <div class="max-w-4xl">
-                    <div class="flex items-center gap-2 mb-10 reveal-up">
-                        <div class="w-3 h-3 rounded-full bg-purple-500"></div>
-                        <span class="font-mono text-gray-500">Plataforma de Servicios</span>
+                    <div class="flex items-center gap-2 mb-6 sm:mb-8 md:mb-10 reveal-up">
+                        <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-purple-500"></div>
+                        <span class="font-mono text-gray-500 text-xs sm:text-sm">Plataforma de Servicios</span>
                     </div>
-                    <h1 class="font-serif text-[6rem] text-[#1c1d1f] leading-[1.05] mb-10 reveal-up">
+                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] text-[#1c1d1f] leading-[1.05] mb-6 sm:mb-8 md:mb-10 reveal-up">
                         Conecta con profesionales locales
                     </h1>
-                    <p class="text-[#70706f] text-2xl max-w-2xl leading-relaxed mb-12 reveal-up">
+                    <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed mb-8 sm:mb-10 md:mb-12 reveal-up">
                         Encuentra mecánicos, peluqueros, cerrajeros, plomeros y más. Trabajadores independientes verificados listos para ayudarte.
                     </p>
-                    <div class="flex gap-4 reveal-up">
-                        <a class="btn-pill-dark px-10 py-4 text-base inline-block" href="#">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 reveal-up">
+                        <a class="btn-pill-dark px-8 sm:px-10 py-3 sm:py-4 text-sm sm:text-base inline-block min-h-[44px] flex items-center justify-center" href="#">
                             Buscar servicios
                         </a>
-                        <a class="px-10 py-4 text-base inline-block rounded-full border-2 border-black/20 hover:border-black/40 transition-colors" href="#">
+                        <a class="px-8 sm:px-10 py-3 sm:py-4 text-sm sm:text-base inline-block rounded-full border-2 border-black/20 hover:border-black/40 transition-colors min-h-[44px] flex items-center justify-center" href="#">
                             Ofrecer servicios
                         </a>
                     </div>
@@ -82,16 +82,16 @@
         </section>
 
         <!-- Services Grid -->
-        <section class="w-full bg-[#080808] py-40 px-10">
+        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-24">
-                    <h2 class="font-serif text-[4.5rem] text-white mb-10 reveal-up">Categorías disponibles</h2>
-                    <p class="text-white/60 text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
+                <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-white mb-6 sm:mb-8 md:mb-10 reveal-up">Categorías disponibles</h2>
+                    <p class="text-white/60 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed reveal-up">
                         Servicios profesionales para el hogar, vehículos y más
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
                     <!-- Service 1 -->
                     <div class="relative group rounded-3xl overflow-hidden border border-white/10 shadow-xl aspect-square bg-gradient-to-br from-blue-900/20 to-purple-900/20 hover:scale-105 transition-transform duration-500">
                         <img alt="Servicio Mecánico" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" src="/service1.png" loading="lazy"/>
@@ -136,44 +136,44 @@
         </section>
 
         <!-- How it Works -->
-        <section class="w-full bg-[#f9f8f6] py-40 px-10">
+        <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-24">
-                    <h2 class="font-serif text-[4.5rem] text-[#1c1d1f] mb-10 reveal-up">¿Cómo funciona?</h2>
+                <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">¿Cómo funciona?</h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 lg:gap-24">
                     <!-- For Clients -->
                     <div class="reveal-up">
-                        <h3 class="font-serif text-4xl text-[#1c1d1f] mb-12">Para clientes</h3>
-                        <div class="space-y-8">
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
+                        <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#1c1d1f] mb-8 sm:mb-10 md:mb-12">Para clientes</h3>
+                        <div class="space-y-6 sm:space-y-8">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     1
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Busca el servicio</h4>
-                                    <p class="text-[#70706f]">Encuentra profesionales cerca de ti filtrando por categoría, precio y valoración.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Busca el servicio</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">Encuentra profesionales cerca de ti filtrando por categoría, precio y valoración.</p>
                                 </div>
                             </div>
 
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     2
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Contacta directamente</h4>
-                                    <p class="text-[#70706f]">Chatea con el profesional, acuerda precio y horario que te convenga.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Contacta directamente</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">Chatea con el profesional, acuerda precio y horario que te convenga.</p>
                                 </div>
                             </div>
 
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     3
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Recibe el servicio</h4>
-                                    <p class="text-[#70706f]">El profesional llega a tu domicilio. Paga y califica el servicio.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Recibe el servicio</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">El profesional llega a tu domicilio. Paga y califica el servicio.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,35 +181,35 @@
 
                     <!-- For Workers -->
                     <div class="reveal-up">
-                        <h3 class="font-serif text-4xl text-[#1c1d1f] mb-12">Para trabajadores</h3>
-                        <div class="space-y-8">
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white font-bold">
+                        <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#1c1d1f] mb-8 sm:mb-10 md:mb-12">Para trabajadores</h3>
+                        <div class="space-y-6 sm:space-y-8">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     1
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Regístrate gratis</h4>
-                                    <p class="text-[#70706f]">Crea tu perfil, añade tu experiencia y servicios que ofreces.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Regístrate gratis</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">Crea tu perfil, añade tu experiencia y servicios que ofreces.</p>
                                 </div>
                             </div>
 
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white font-bold">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     2
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Recibe solicitudes</h4>
-                                    <p class="text-[#70706f]">Clientes te contactan directamente. Tú decides qué trabajos aceptar.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Recibe solicitudes</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">Clientes te contactan directamente. Tú decides qué trabajos aceptar.</p>
                                 </div>
                             </div>
 
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white font-bold">
+                            <div class="flex gap-4 sm:gap-6">
+                                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-sm sm:text-base font-bold">
                                     3
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-xl mb-2">Trabaja y gana</h4>
-                                    <p class="text-[#70706f]">Sin comisiones altas. Solo una tarifa mínima mensual para usar la plataforma.</p>
+                                    <h4 class="font-semibold text-lg sm:text-xl mb-1.5 sm:mb-2">Trabaja y gana</h4>
+                                    <p class="text-[#70706f] text-sm sm:text-base">Sin comisiones altas. Solo una tarifa mínima mensual para usar la plataforma.</p>
                                 </div>
                             </div>
                         </div>
@@ -219,46 +219,46 @@
         </section>
 
         <!-- Benefits -->
-        <section class="w-full bg-[#080808] py-40 px-10">
+        <section class="w-full bg-[#080808] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-7xl mx-auto">
-                <h2 class="font-serif text-[4.5rem] text-white mb-24 text-center reveal-up">¿Por qué Semper Fi?</h2>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-white mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center reveal-up">¿Por qué Semper Fi?</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
                     <!-- Benefit 1 -->
                     <div class="text-center reveal-up">
-                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mx-auto mb-8">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mx-auto mb-6 sm:mb-8">
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-serif text-3xl text-white mb-6">Profesionales verificados</h3>
-                        <p class="text-white/60 text-lg leading-relaxed">
+                        <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4 sm:mb-6">Profesionales verificados</h3>
+                        <p class="text-white/60 text-base sm:text-lg leading-relaxed">
                             Todos los trabajadores pasan por un proceso de verificación y sus servicios son calificados por clientes reales.
                         </p>
                     </div>
 
                     <!-- Benefit 2 -->
                     <div class="text-center reveal-up">
-                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center mx-auto mb-8">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center mx-auto mb-6 sm:mb-8">
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-serif text-3xl text-white mb-6">Precios justos</h3>
-                        <p class="text-white/60 text-lg leading-relaxed">
+                        <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4 sm:mb-6">Precios justos</h3>
+                        <p class="text-white/60 text-base sm:text-lg leading-relaxed">
                             Cada profesional establece sus tarifas. Compara precios y elige la mejor opción para ti.
                         </p>
                     </div>
 
                     <!-- Benefit 3 -->
                     <div class="text-center reveal-up">
-                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center mx-auto mb-8">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center mx-auto mb-6 sm:mb-8">
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="font-serif text-3xl text-white mb-6">Rápido y confiable</h3>
-                        <p class="text-white/60 text-lg leading-relaxed">
+                        <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4 sm:mb-6">Rápido y confiable</h3>
+                        <p class="text-white/60 text-base sm:text-lg leading-relaxed">
                             Encuentra profesionales disponibles cerca de ti en minutos. Atención inmediata cuando lo necesites.
                         </p>
                     </div>
@@ -267,19 +267,19 @@
         </section>
 
         <!-- CTA -->
-        <section class="w-full bg-[#f9f8f6] py-40 px-10">
+        <section class="w-full bg-[#f9f8f6] py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-8 lg:px-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-serif text-[4.5rem] text-[#1c1d1f] mb-10 reveal-up">
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] text-[#1c1d1f] mb-6 sm:mb-8 md:mb-10 reveal-up">
                     Comienza hoy
                 </h2>
-                <p class="text-[#70706f] text-2xl mb-12 reveal-up">
+                <p class="text-[#70706f] text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 reveal-up">
                     Únete a la comunidad de profesionales y clientes de Popayán
                 </p>
-                <div class="flex justify-center gap-4 reveal-up">
-                    <a class="btn-pill-dark px-12 py-5 text-lg inline-block" href="#">
+                <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 reveal-up">
+                    <a class="btn-pill-dark px-10 sm:px-12 py-4 sm:py-5 text-base sm:text-lg inline-block min-h-[44px] flex items-center justify-center" href="#">
                         Buscar servicios
                     </a>
-                    <a class="px-12 py-5 text-lg inline-block rounded-full border-2 border-black/20 hover:border-black/40 transition-colors" href="#">
+                    <a class="px-10 sm:px-12 py-4 sm:py-5 text-base sm:text-lg inline-block rounded-full border-2 border-black/20 hover:border-black/40 transition-colors min-h-[44px] flex items-center justify-center" href="#">
                         Ofrecer mis servicios
                     </a>
                 </div>
