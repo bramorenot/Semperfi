@@ -1,8 +1,8 @@
-// Punto de entrada principal
+// Punto de entrada compartido por todas las páginas.
 import './styles/main.css';
-
-// Importar componentes Web Components
 import './components/AppHeader.js';
 import './components/AppFooter.js';
+import { initMotion } from './js/motion.js';
 
-console.log('✅ Semper Fi cargado correctamente - Componentes registrados');
+document.documentElement.classList.remove('no-js');
+initMotion();
